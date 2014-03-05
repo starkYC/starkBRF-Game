@@ -20,8 +20,7 @@
 {
     self = [super init];
     if (self) {
-        STRLOG(@"ddd");
-        _responseData = [[NSMutableData alloc] init];
+              _responseData = [[NSMutableData alloc] init];
     }
     return self;
 }
