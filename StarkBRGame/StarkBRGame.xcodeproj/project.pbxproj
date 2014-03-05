@@ -1,0 +1,1145 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		083B2474188D1F11007F4738 /* STARKPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083B2472188D1F11007F4738 /* STARKPersonalViewController.m */; };
+		083B2475188D1F11007F4738 /* STARKPersonalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083B2473188D1F11007F4738 /* STARKPersonalViewController.xib */; };
+		083B247D188D1F1C007F4738 /* STARKActivityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083B2477188D1F1C007F4738 /* STARKActivityDetailViewController.m */; };
+		083B247E188D1F1C007F4738 /* STARKActivityDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083B2478188D1F1C007F4738 /* STARKActivityDetailViewController.xib */; };
+		083B247F188D1F1C007F4738 /* STARKAPPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083B247A188D1F1C007F4738 /* STARKAPPDetailViewController.m */; };
+		083B2480188D1F1C007F4738 /* STARKAPPDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083B247C188D1F1C007F4738 /* STARKAPPDetailViewController.xib */; };
+		086416DD18865D51005A2D43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086416DC18865D51005A2D43 /* Foundation.framework */; };
+		086416DF18865D51005A2D43 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086416DE18865D51005A2D43 /* CoreGraphics.framework */; };
+		086416E118865D51005A2D43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086416E018865D51005A2D43 /* UIKit.framework */; };
+		086416E718865D51005A2D43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 086416E518865D51005A2D43 /* InfoPlist.strings */; };
+		086416E918865D51005A2D43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 086416E818865D51005A2D43 /* main.m */; };
+		086416ED18865D51005A2D43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 086416EC18865D51005A2D43 /* AppDelegate.m */; };
+		086416F618865D51005A2D43 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086416F518865D51005A2D43 /* XCTest.framework */; };
+		086416F718865D51005A2D43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086416DC18865D51005A2D43 /* Foundation.framework */; };
+		086416F818865D51005A2D43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086416E018865D51005A2D43 /* UIKit.framework */; };
+		0864170018865D51005A2D43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 086416FE18865D51005A2D43 /* InfoPlist.strings */; };
+		0864170218865D51005A2D43 /* StarkBRGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864170118865D51005A2D43 /* StarkBRGameTests.m */; };
+		0864170D18865D86005A2D43 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864170C18865D86005A2D43 /* RootViewController.m */; };
+		0864177E18866218005A2D43 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864174118866218005A2D43 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864177F18866218005A2D43 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864174418866218005A2D43 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864178018866218005A2D43 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864174618866218005A2D43 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864178118866218005A2D43 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864174818866218005A2D43 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864178218866218005A2D43 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864174A18866218005A2D43 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864178318866218005A2D43 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864174C18866218005A2D43 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864178418866218005A2D43 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864175018866218005A2D43 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864178518866218005A2D43 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864175218866218005A2D43 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864178618866218005A2D43 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864175518866218005A2D43 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864178718866218005A2D43 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864175918866218005A2D43 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864178818866218005A2D43 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864175B18866218005A2D43 /* HttpRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864178A18866218005A2D43 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0864176118866218005A2D43 /* LICENSE */; };
+		0864178B18866218005A2D43 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0864176218866218005A2D43 /* README.md */; };
+		0864179418866218005A2D43 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864176D18866218005A2D43 /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864179518866218005A2D43 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864177118866218005A2D43 /* SDWebImageDecoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864179618866218005A2D43 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864177318866218005A2D43 /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864179718866218005A2D43 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864177618866218005A2D43 /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864179818866218005A2D43 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864177918866218005A2D43 /* SDWebImagePrefetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864179918866218005A2D43 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864177B18866218005A2D43 /* UIButton+WebCache.m */; };
+		0864179A18866218005A2D43 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864177D18866218005A2D43 /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0864179E188662A5005A2D43 /* STARKActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0864179C188662A5005A2D43 /* STARKActivityViewController.m */; };
+		0864179F188662A5005A2D43 /* STARKActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0864179D188662A5005A2D43 /* STARKActivityViewController.xib */; };
+		086417A8188662FD005A2D43 /* STARKSetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086417A6188662FD005A2D43 /* STARKSetterViewController.m */; };
+		086417A9188662FD005A2D43 /* STARKSetterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086417A7188662FD005A2D43 /* STARKSetterViewController.xib */; };
+		086417AC188663E6005A2D43 /* DBManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 086417AB188663E6005A2D43 /* DBManger.m */; };
+		086417BB188665C8005A2D43 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 086417B1188665C8005A2D43 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		086417BC188665C8005A2D43 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417B3188665C8005A2D43 /* blackArrow.png */; };
+		086417BD188665C8005A2D43 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417B4188665C8005A2D43 /* blackArrow@2x.png */; };
+		086417BE188665C8005A2D43 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417B5188665C8005A2D43 /* blueArrow.png */; };
+		086417BF188665C8005A2D43 /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417B6188665C8005A2D43 /* blueArrow@2x.png */; };
+		086417C0188665C8005A2D43 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417B7188665C8005A2D43 /* grayArrow.png */; };
+		086417C1188665C8005A2D43 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417B8188665C8005A2D43 /* grayArrow@2x.png */; };
+		086417C2188665C8005A2D43 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417B9188665C8005A2D43 /* whiteArrow.png */; };
+		086417C3188665C8005A2D43 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417BA188665C8005A2D43 /* whiteArrow@2x.png */; };
+		086417C8188668C0005A2D43 /* BoutiqueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 086417C6188668C0005A2D43 /* BoutiqueCell.m */; };
+		086417C9188668C0005A2D43 /* BoutiqueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086417C7188668C0005A2D43 /* BoutiqueCell.xib */; };
+		086417CC18866945005A2D43 /* BoutiqueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 086417CB18866945005A2D43 /* BoutiqueModel.m */; };
+		086417CE18866AC2005A2D43 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 086417CD18866AC2005A2D43 /* libxml2.dylib */; };
+		086417D018866AD4005A2D43 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 086417CF18866AD4005A2D43 /* libz.1.1.3.dylib */; };
+		086417D218866ADD005A2D43 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086417D118866ADD005A2D43 /* CFNetwork.framework */; };
+		086417D418866AED005A2D43 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086417D318866AED005A2D43 /* SystemConfiguration.framework */; };
+		086417D618866AF6005A2D43 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086417D518866AF6005A2D43 /* MobileCoreServices.framework */; };
+		086417E818867979005A2D43 /* ActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 086417E718867979005A2D43 /* ActivityCell.m */; };
+		086417EA18867993005A2D43 /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086417E918867993005A2D43 /* ActivityCell.xib */; };
+		086417ED18867B09005A2D43 /* ActivityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 086417EC18867B09005A2D43 /* ActivityModel.m */; };
+		086417F118868471005A2D43 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086417F018868471005A2D43 /* Security.framework */; };
+		086417F318868494005A2D43 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086417F218868494005A2D43 /* QuartzCore.framework */; };
+		086417F518868499005A2D43 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086417F418868499005A2D43 /* AddressBook.framework */; };
+		086417F7188684A0005A2D43 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086417F6188684A0005A2D43 /* CoreMotion.framework */; };
+		086417F9188684B0005A2D43 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086417F8188684B0005A2D43 /* MessageUI.framework */; };
+		086417FB188684C1005A2D43 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086417FA188684C1005A2D43 /* MediaPlayer.framework */; };
+		086417FD188684CB005A2D43 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086417FC188684CA005A2D43 /* CoreLocation.framework */; };
+		088D1FF7189639DA006861AE /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088D1FF6189639DA006861AE /* AssetsLibrary.framework */; };
+		088D200118963AF5006861AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088D200018963AF5006861AE /* CoreText.framework */; };
+		088D2051189653ED006861AE /* STARKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 088D2050189653ED006861AE /* STARKLoginViewController.m */; };
+		0896C1B818A8E11F00718579 /* FMDBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0896C1B718A8E11F00718579 /* FMDBase.m */; };
+		089847E818AC65B700232262 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 089847DE18AC65B700232262 /* MJRefresh.bundle */; };
+		089847E918AC65B700232262 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 089847E118AC65B700232262 /* MJRefreshBaseView.m */; };
+		089847EA18AC65B700232262 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 089847E318AC65B700232262 /* MJRefreshConst.m */; };
+		089847EB18AC65B700232262 /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 089847E518AC65B700232262 /* MJRefreshFooterView.m */; };
+		089847EC18AC65B700232262 /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 089847E718AC65B700232262 /* MJRefreshHeaderView.m */; };
+		0899CBC018AB5F3D005432A5 /* STARKBoutiqueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0899CBBE18AB5F3D005432A5 /* STARKBoutiqueViewController.m */; };
+		0899CBC118AB5F3D005432A5 /* STARKBoutiqueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0899CBBF18AB5F3D005432A5 /* STARKBoutiqueViewController.xib */; };
+		089D5CE818B1AE4B003B1842 /* SetterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 089D5CE718B1AE4B003B1842 /* SetterCell.m */; };
+		089D5CEA18B1AE67003B1842 /* SetterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089D5CE918B1AE67003B1842 /* SetterCell.xib */; };
+		089D5CED18B1B3D3003B1842 /* StarkPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 089D5CEC18B1B3D3003B1842 /* StarkPurchaseViewController.m */; };
+		089D5CF618B1EFEE003B1842 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 089D5CEF18B1EFEE003B1842 /* Default.png */; };
+		089D5CF718B1EFEE003B1842 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 089D5CF018B1EFEE003B1842 /* Default~iphone.png */; };
+		089D5CF818B1EFEE003B1842 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 089D5CF118B1EFEE003B1842 /* Default-568h@2x.png */; };
+		089D5CF918B1EFEE003B1842 /* icon-60@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 089D5CF218B1EFEE003B1842 /* icon-60@2X.png */; };
+		089D5CFA18B1EFEE003B1842 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 089D5CF318B1EFEE003B1842 /* icon.png */; };
+		089D5CFB18B1EFEE003B1842 /* icon@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 089D5CF418B1EFEE003B1842 /* icon@2X.png */; };
+		089F866318A5E6860019B164 /* Purchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 089F866218A5E6860019B164 /* Purchase.m */; };
+		08A21B3918A4792C000D6D96 /* ReachAble.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A21B3818A4792C000D6D96 /* ReachAble.m */; };
+		08AF8B6218BAF57E00BB7E88 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AF8B5E18BAF57D00BB7E88 /* GoogleOpenSource.framework */; };
+		08AF8B6318BAF57E00BB7E88 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 08AF8B5F18BAF57D00BB7E88 /* GooglePlus.bundle */; };
+		08AF8B6418BAF57E00BB7E88 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AF8B6018BAF57D00BB7E88 /* GooglePlus.framework */; };
+		08B2335F18B60C0D00473063 /* STARKBoutiqueViewController_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B2335E18B60C0D00473063 /* STARKBoutiqueViewController_ipad.xib */; };
+		08BC3F1C18A9FE37006B4D01 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC3F1318A9FE37006B4D01 /* FMDatabase.m */; };
+		08BC3F1D18A9FE37006B4D01 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC3F1518A9FE37006B4D01 /* FMDatabaseAdditions.m */; };
+		08BC3F1E18A9FE37006B4D01 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC3F1718A9FE37006B4D01 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		08BC3F1F18A9FE37006B4D01 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC3F1918A9FE37006B4D01 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		08BC3F2018A9FE37006B4D01 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC3F1B18A9FE37006B4D01 /* FMResultSet.m */; };
+		08BC3F2218AA0023006B4D01 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BC3F2118AA0023006B4D01 /* libsqlite3.dylib */; };
+		08BC3F2518AA00B3006B4D01 /* AccoutInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC3F2418AA00B3006B4D01 /* AccoutInfo.m */; };
+		08BC3F2B18AA0B40006B4D01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08BC3F2D18AA0B40006B4D01 /* Localizable.strings */; };
+		08C58B071887BF2F0060500F /* STARKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C58B051887BF2F0060500F /* STARKLoginViewController.xib */; };
+		08EA9A7118C5B62000C39503 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA9A7018C5B62000C39503 /* FacebookSDK.framework */; };
+		08EA9A7618C5E39000C39503 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 08EA9A7518C5E39000C39503 /* Contents.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		086416F918865D51005A2D43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 086416D118865D51005A2D43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 086416D818865D51005A2D43;
+			remoteInfo = StarkBRGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		083B2471188D1F11007F4738 /* STARKPersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STARKPersonalViewController.h; path = FirstController/STARKPersonalViewController.h; sourceTree = "<group>"; };
+		083B2472188D1F11007F4738 /* STARKPersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STARKPersonalViewController.m; path = FirstController/STARKPersonalViewController.m; sourceTree = "<group>"; };
+		083B2473188D1F11007F4738 /* STARKPersonalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = STARKPersonalViewController.xib; path = FirstController/STARKPersonalViewController.xib; sourceTree = "<group>"; };
+		083B2477188D1F1C007F4738 /* STARKActivityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STARKActivityDetailViewController.m; sourceTree = "<group>"; };
+		083B2478188D1F1C007F4738 /* STARKActivityDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STARKActivityDetailViewController.xib; sourceTree = "<group>"; };
+		083B2479188D1F1C007F4738 /* STARKAPPDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STARKAPPDetailViewController.h; sourceTree = "<group>"; };
+		083B247A188D1F1C007F4738 /* STARKAPPDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STARKAPPDetailViewController.m; sourceTree = "<group>"; };
+		083B247B188D1F1C007F4738 /* STARKActivityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STARKActivityDetailViewController.h; sourceTree = "<group>"; };
+		083B247C188D1F1C007F4738 /* STARKAPPDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STARKAPPDetailViewController.xib; sourceTree = "<group>"; };
+		086416D918865D51005A2D43 /* StarkBRGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarkBRGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		086416DC18865D51005A2D43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		086416DE18865D51005A2D43 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		086416E018865D51005A2D43 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		086416E418865D51005A2D43 /* StarkBRGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StarkBRGame-Info.plist"; sourceTree = "<group>"; };
+		086416E618865D51005A2D43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		086416E818865D51005A2D43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		086416EA18865D51005A2D43 /* StarkBRGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StarkBRGame-Prefix.pch"; sourceTree = "<group>"; };
+		086416EB18865D51005A2D43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		086416EC18865D51005A2D43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		086416F418865D51005A2D43 /* StarkBRGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarkBRGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		086416F518865D51005A2D43 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		086416FD18865D51005A2D43 /* StarkBRGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StarkBRGameTests-Info.plist"; sourceTree = "<group>"; };
+		086416FF18865D51005A2D43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0864170118865D51005A2D43 /* StarkBRGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarkBRGameTests.m; sourceTree = "<group>"; };
+		0864170B18865D86005A2D43 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Root/RootViewController.h; sourceTree = "<group>"; };
+		0864170C18865D86005A2D43 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Root/RootViewController.m; sourceTree = "<group>"; };
+		0864174018866218005A2D43 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		0864174118866218005A2D43 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		0864174218866218005A2D43 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		0864174318866218005A2D43 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		0864174418866218005A2D43 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		0864174518866218005A2D43 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		0864174618866218005A2D43 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		0864174718866218005A2D43 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		0864174818866218005A2D43 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		0864174918866218005A2D43 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		0864174A18866218005A2D43 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		0864174B18866218005A2D43 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		0864174C18866218005A2D43 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		0864174D18866218005A2D43 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		0864174E18866218005A2D43 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		0864174F18866218005A2D43 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		0864175018866218005A2D43 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		0864175118866218005A2D43 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		0864175218866218005A2D43 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		0864175318866218005A2D43 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		0864175418866218005A2D43 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0864175518866218005A2D43 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		0864175818866218005A2D43 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		0864175918866218005A2D43 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		0864175A18866218005A2D43 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		0864175B18866218005A2D43 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		0864176118866218005A2D43 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0864176218866218005A2D43 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		0864176C18866218005A2D43 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		0864176D18866218005A2D43 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		0864176E18866218005A2D43 /* SDImageCacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCacheDelegate.h; sourceTree = "<group>"; };
+		0864176F18866218005A2D43 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		0864177018866218005A2D43 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		0864177118866218005A2D43 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		0864177218866218005A2D43 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		0864177318866218005A2D43 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		0864177418866218005A2D43 /* SDWebImageDownloaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderDelegate.h; sourceTree = "<group>"; };
+		0864177518866218005A2D43 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		0864177618866218005A2D43 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		0864177718866218005A2D43 /* SDWebImageManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManagerDelegate.h; sourceTree = "<group>"; };
+		0864177818866218005A2D43 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		0864177918866218005A2D43 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		0864177A18866218005A2D43 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		0864177B18866218005A2D43 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		0864177C18866218005A2D43 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		0864177D18866218005A2D43 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		0864179B188662A5005A2D43 /* STARKActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STARKActivityViewController.h; path = FirstController/STARKActivityViewController.h; sourceTree = "<group>"; };
+		0864179C188662A5005A2D43 /* STARKActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STARKActivityViewController.m; path = FirstController/STARKActivityViewController.m; sourceTree = "<group>"; };
+		0864179D188662A5005A2D43 /* STARKActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = STARKActivityViewController.xib; path = FirstController/STARKActivityViewController.xib; sourceTree = "<group>"; };
+		086417A5188662FD005A2D43 /* STARKSetterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STARKSetterViewController.h; path = FirstController/STARKSetterViewController.h; sourceTree = "<group>"; };
+		086417A6188662FD005A2D43 /* STARKSetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STARKSetterViewController.m; path = FirstController/STARKSetterViewController.m; sourceTree = "<group>"; };
+		086417A7188662FD005A2D43 /* STARKSetterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = STARKSetterViewController.xib; path = FirstController/STARKSetterViewController.xib; sourceTree = "<group>"; };
+		086417AA188663E6005A2D43 /* DBManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManger.h; sourceTree = "<group>"; };
+		086417AB188663E6005A2D43 /* DBManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManger.m; sourceTree = "<group>"; };
+		086417B0188665C8005A2D43 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		086417B1188665C8005A2D43 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		086417B3188665C8005A2D43 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		086417B4188665C8005A2D43 /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		086417B5188665C8005A2D43 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		086417B6188665C8005A2D43 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		086417B7188665C8005A2D43 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		086417B8188665C8005A2D43 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		086417B9188665C8005A2D43 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		086417BA188665C8005A2D43 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
+		086417C5188668C0005A2D43 /* BoutiqueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoutiqueCell.h; sourceTree = "<group>"; };
+		086417C6188668C0005A2D43 /* BoutiqueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoutiqueCell.m; sourceTree = "<group>"; };
+		086417C7188668C0005A2D43 /* BoutiqueCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoutiqueCell.xib; sourceTree = "<group>"; };
+		086417CA18866945005A2D43 /* BoutiqueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoutiqueModel.h; path = Model/BoutiqueModel.h; sourceTree = "<group>"; };
+		086417CB18866945005A2D43 /* BoutiqueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoutiqueModel.m; path = Model/BoutiqueModel.m; sourceTree = "<group>"; };
+		086417CD18866AC2005A2D43 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		086417CF18866AD4005A2D43 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		086417D118866ADD005A2D43 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		086417D318866AED005A2D43 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		086417D518866AF6005A2D43 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		086417E618867979005A2D43 /* ActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityCell.h; sourceTree = "<group>"; };
+		086417E718867979005A2D43 /* ActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityCell.m; sourceTree = "<group>"; };
+		086417E918867993005A2D43 /* ActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
+		086417EB18867B09005A2D43 /* ActivityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityModel.h; path = Model/ActivityModel.h; sourceTree = "<group>"; };
+		086417EC18867B09005A2D43 /* ActivityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityModel.m; path = Model/ActivityModel.m; sourceTree = "<group>"; };
+		086417F018868471005A2D43 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		086417F218868494005A2D43 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		086417F418868499005A2D43 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		086417F6188684A0005A2D43 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		086417F8188684B0005A2D43 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		086417FA188684C1005A2D43 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		086417FC188684CA005A2D43 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		088D1FF6189639DA006861AE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		088D200018963AF5006861AE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		088D2050189653ED006861AE /* STARKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STARKLoginViewController.m; path = FirstController/STARKLoginViewController.m; sourceTree = "<group>"; };
+		0896C1B618A8E11F00718579 /* FMDBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBase.h; sourceTree = "<group>"; };
+		0896C1B718A8E11F00718579 /* FMDBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBase.m; sourceTree = "<group>"; };
+		089847DE18AC65B700232262 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		089847DF18AC65B700232262 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		089847E018AC65B700232262 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
+		089847E118AC65B700232262 /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
+		089847E218AC65B700232262 /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		089847E318AC65B700232262 /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		089847E418AC65B700232262 /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
+		089847E518AC65B700232262 /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
+		089847E618AC65B700232262 /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
+		089847E718AC65B700232262 /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
+		0899CBBD18AB5F3D005432A5 /* STARKBoutiqueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STARKBoutiqueViewController.h; path = FirstController/STARKBoutiqueViewController.h; sourceTree = "<group>"; };
+		0899CBBE18AB5F3D005432A5 /* STARKBoutiqueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STARKBoutiqueViewController.m; path = FirstController/STARKBoutiqueViewController.m; sourceTree = "<group>"; };
+		0899CBBF18AB5F3D005432A5 /* STARKBoutiqueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = STARKBoutiqueViewController.xib; path = FirstController/STARKBoutiqueViewController.xib; sourceTree = "<group>"; };
+		089D5CE618B1AE4B003B1842 /* SetterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetterCell.h; sourceTree = "<group>"; };
+		089D5CE718B1AE4B003B1842 /* SetterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetterCell.m; sourceTree = "<group>"; };
+		089D5CE918B1AE67003B1842 /* SetterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetterCell.xib; sourceTree = "<group>"; };
+		089D5CEB18B1B3D3003B1842 /* StarkPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarkPurchaseViewController.h; sourceTree = "<group>"; };
+		089D5CEC18B1B3D3003B1842 /* StarkPurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarkPurchaseViewController.m; sourceTree = "<group>"; };
+		089D5CEF18B1EFEE003B1842 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		089D5CF018B1EFEE003B1842 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		089D5CF118B1EFEE003B1842 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		089D5CF218B1EFEE003B1842 /* icon-60@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2X.png"; sourceTree = "<group>"; };
+		089D5CF318B1EFEE003B1842 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		089D5CF418B1EFEE003B1842 /* icon@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2X.png"; sourceTree = "<group>"; };
+		089F866118A5E6860019B164 /* Purchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Purchase.h; path = Model/Purchase.h; sourceTree = "<group>"; };
+		089F866218A5E6860019B164 /* Purchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Purchase.m; path = Model/Purchase.m; sourceTree = "<group>"; };
+		08A21B3718A4792C000D6D96 /* ReachAble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachAble.h; sourceTree = "<group>"; };
+		08A21B3818A4792C000D6D96 /* ReachAble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachAble.m; sourceTree = "<group>"; };
+		08AF8B5E18BAF57D00BB7E88 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		08AF8B5F18BAF57D00BB7E88 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
+		08AF8B6018BAF57D00BB7E88 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		08B2335E18B60C0D00473063 /* STARKBoutiqueViewController_ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STARKBoutiqueViewController_ipad.xib; sourceTree = "<group>"; };
+		08BC3F1218A9FE37006B4D01 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		08BC3F1318A9FE37006B4D01 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		08BC3F1418A9FE37006B4D01 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		08BC3F1518A9FE37006B4D01 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		08BC3F1618A9FE37006B4D01 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		08BC3F1718A9FE37006B4D01 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		08BC3F1818A9FE37006B4D01 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		08BC3F1918A9FE37006B4D01 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		08BC3F1A18A9FE37006B4D01 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		08BC3F1B18A9FE37006B4D01 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		08BC3F2118AA0023006B4D01 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		08BC3F2318AA00B3006B4D01 /* AccoutInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccoutInfo.h; path = Model/AccoutInfo.h; sourceTree = "<group>"; };
+		08BC3F2418AA00B3006B4D01 /* AccoutInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccoutInfo.m; path = Model/AccoutInfo.m; sourceTree = "<group>"; };
+		08BC3F2C18AA0B40006B4D01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		08BC3F2E18AA0B60006B4D01 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		08BC3F2F18AA0B60006B4D01 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		08BC3F3018AA0B60006B4D01 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		08C58B031887BF2F0060500F /* STARKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STARKLoginViewController.h; path = FirstController/STARKLoginViewController.h; sourceTree = "<group>"; };
+		08C58B051887BF2F0060500F /* STARKLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = STARKLoginViewController.xib; path = FirstController/STARKLoginViewController.xib; sourceTree = "<group>"; };
+		08E6047718C5768000056925 /* command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = command.h; sourceTree = "<group>"; };
+		08EA9A7018C5B62000C39503 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		08EA9A7518C5E39000C39503 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		086416D618865D51005A2D43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BC3F2218AA0023006B4D01 /* libsqlite3.dylib in Frameworks */,
+				086417D618866AF6005A2D43 /* MobileCoreServices.framework in Frameworks */,
+				088D200118963AF5006861AE /* CoreText.framework in Frameworks */,
+				088D1FF7189639DA006861AE /* AssetsLibrary.framework in Frameworks */,
+				086417FD188684CB005A2D43 /* CoreLocation.framework in Frameworks */,
+				086417FB188684C1005A2D43 /* MediaPlayer.framework in Frameworks */,
+				086417D418866AED005A2D43 /* SystemConfiguration.framework in Frameworks */,
+				086417F9188684B0005A2D43 /* MessageUI.framework in Frameworks */,
+				086417F7188684A0005A2D43 /* CoreMotion.framework in Frameworks */,
+				08AF8B6218BAF57E00BB7E88 /* GoogleOpenSource.framework in Frameworks */,
+				086417F518868499005A2D43 /* AddressBook.framework in Frameworks */,
+				086417F318868494005A2D43 /* QuartzCore.framework in Frameworks */,
+				086417F118868471005A2D43 /* Security.framework in Frameworks */,
+				086417D218866ADD005A2D43 /* CFNetwork.framework in Frameworks */,
+				086417D018866AD4005A2D43 /* libz.1.1.3.dylib in Frameworks */,
+				08AF8B6418BAF57E00BB7E88 /* GooglePlus.framework in Frameworks */,
+				086417CE18866AC2005A2D43 /* libxml2.dylib in Frameworks */,
+				086416DF18865D51005A2D43 /* CoreGraphics.framework in Frameworks */,
+				086416E118865D51005A2D43 /* UIKit.framework in Frameworks */,
+				086416DD18865D51005A2D43 /* Foundation.framework in Frameworks */,
+				08EA9A7118C5B62000C39503 /* FacebookSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		086416F118865D51005A2D43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086416F618865D51005A2D43 /* XCTest.framework in Frameworks */,
+				086416F818865D51005A2D43 /* UIKit.framework in Frameworks */,
+				086416F718865D51005A2D43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		083B2476188D1F1C007F4738 /* SecondController */ = {
+			isa = PBXGroup;
+			children = (
+				083B247B188D1F1C007F4738 /* STARKActivityDetailViewController.h */,
+				083B2477188D1F1C007F4738 /* STARKActivityDetailViewController.m */,
+				083B2478188D1F1C007F4738 /* STARKActivityDetailViewController.xib */,
+				083B2479188D1F1C007F4738 /* STARKAPPDetailViewController.h */,
+				083B247A188D1F1C007F4738 /* STARKAPPDetailViewController.m */,
+				083B247C188D1F1C007F4738 /* STARKAPPDetailViewController.xib */,
+				089D5CEB18B1B3D3003B1842 /* StarkPurchaseViewController.h */,
+				089D5CEC18B1B3D3003B1842 /* StarkPurchaseViewController.m */,
+			);
+			path = SecondController;
+			sourceTree = "<group>";
+		};
+		086416D018865D51005A2D43 = {
+			isa = PBXGroup;
+			children = (
+				086416E218865D51005A2D43 /* StarkBRGame */,
+				086416FB18865D51005A2D43 /* StarkBRGameTests */,
+				086416DB18865D51005A2D43 /* Frameworks */,
+				086416DA18865D51005A2D43 /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		086416DA18865D51005A2D43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				086416D918865D51005A2D43 /* StarkBRGame.app */,
+				086416F418865D51005A2D43 /* StarkBRGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		086416DB18865D51005A2D43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08EA9A7018C5B62000C39503 /* FacebookSDK.framework */,
+				08AF8B5E18BAF57D00BB7E88 /* GoogleOpenSource.framework */,
+				08AF8B5F18BAF57D00BB7E88 /* GooglePlus.bundle */,
+				08AF8B6018BAF57D00BB7E88 /* GooglePlus.framework */,
+				08BC3F2118AA0023006B4D01 /* libsqlite3.dylib */,
+				088D200018963AF5006861AE /* CoreText.framework */,
+				088D1FF6189639DA006861AE /* AssetsLibrary.framework */,
+				086417FC188684CA005A2D43 /* CoreLocation.framework */,
+				086417FA188684C1005A2D43 /* MediaPlayer.framework */,
+				086417F8188684B0005A2D43 /* MessageUI.framework */,
+				086417F6188684A0005A2D43 /* CoreMotion.framework */,
+				086417F418868499005A2D43 /* AddressBook.framework */,
+				086417F218868494005A2D43 /* QuartzCore.framework */,
+				086417F018868471005A2D43 /* Security.framework */,
+				086417D518866AF6005A2D43 /* MobileCoreServices.framework */,
+				086417D318866AED005A2D43 /* SystemConfiguration.framework */,
+				086417D118866ADD005A2D43 /* CFNetwork.framework */,
+				086417CF18866AD4005A2D43 /* libz.1.1.3.dylib */,
+				086417CD18866AC2005A2D43 /* libxml2.dylib */,
+				086416DC18865D51005A2D43 /* Foundation.framework */,
+				086416DE18865D51005A2D43 /* CoreGraphics.framework */,
+				086416E018865D51005A2D43 /* UIKit.framework */,
+				086416F518865D51005A2D43 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		086416E218865D51005A2D43 /* StarkBRGame */ = {
+			isa = PBXGroup;
+			children = (
+				086416EB18865D51005A2D43 /* AppDelegate.h */,
+				086416EC18865D51005A2D43 /* AppDelegate.m */,
+				0864170E18865D8C005A2D43 /* Root */,
+				0864171018865DA0005A2D43 /* FirstController */,
+				083B2476188D1F1C007F4738 /* SecondController */,
+				0864171A188660AB005A2D43 /* Model */,
+				086417C4188668C0005A2D43 /* View */,
+				0864173E18866218005A2D43 /* Resouce */,
+				08BC3F2818AA0AE6006B4D01 /* Languages */,
+				086416E318865D51005A2D43 /* Supporting Files */,
+			);
+			path = StarkBRGame;
+			sourceTree = "<group>";
+		};
+		086416E318865D51005A2D43 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08EA9A7418C5E39000C39503 /* Image.imageset */,
+				086416E418865D51005A2D43 /* StarkBRGame-Info.plist */,
+				086416E518865D51005A2D43 /* InfoPlist.strings */,
+				086416E818865D51005A2D43 /* main.m */,
+				086416EA18865D51005A2D43 /* StarkBRGame-Prefix.pch */,
+				08E6047718C5768000056925 /* command.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		086416FB18865D51005A2D43 /* StarkBRGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				0864170118865D51005A2D43 /* StarkBRGameTests.m */,
+				086416FC18865D51005A2D43 /* Supporting Files */,
+			);
+			path = StarkBRGameTests;
+			sourceTree = "<group>";
+		};
+		086416FC18865D51005A2D43 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				086416FD18865D51005A2D43 /* StarkBRGameTests-Info.plist */,
+				086416FE18865D51005A2D43 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0864170E18865D8C005A2D43 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				0864170B18865D86005A2D43 /* RootViewController.h */,
+				0864170C18865D86005A2D43 /* RootViewController.m */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		0864171018865DA0005A2D43 /* FirstController */ = {
+			isa = PBXGroup;
+			children = (
+				0899CBBD18AB5F3D005432A5 /* STARKBoutiqueViewController.h */,
+				0899CBBE18AB5F3D005432A5 /* STARKBoutiqueViewController.m */,
+				0899CBBF18AB5F3D005432A5 /* STARKBoutiqueViewController.xib */,
+				08B2335E18B60C0D00473063 /* STARKBoutiqueViewController_ipad.xib */,
+				0864179B188662A5005A2D43 /* STARKActivityViewController.h */,
+				0864179C188662A5005A2D43 /* STARKActivityViewController.m */,
+				0864179D188662A5005A2D43 /* STARKActivityViewController.xib */,
+				083B2471188D1F11007F4738 /* STARKPersonalViewController.h */,
+				083B2472188D1F11007F4738 /* STARKPersonalViewController.m */,
+				083B2473188D1F11007F4738 /* STARKPersonalViewController.xib */,
+				08C58B031887BF2F0060500F /* STARKLoginViewController.h */,
+				088D2050189653ED006861AE /* STARKLoginViewController.m */,
+				08C58B051887BF2F0060500F /* STARKLoginViewController.xib */,
+				086417A5188662FD005A2D43 /* STARKSetterViewController.h */,
+				086417A6188662FD005A2D43 /* STARKSetterViewController.m */,
+				086417A7188662FD005A2D43 /* STARKSetterViewController.xib */,
+			);
+			name = FirstController;
+			sourceTree = "<group>";
+		};
+		0864171A188660AB005A2D43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				089F866118A5E6860019B164 /* Purchase.h */,
+				089F866218A5E6860019B164 /* Purchase.m */,
+				08A21B3718A4792C000D6D96 /* ReachAble.h */,
+				08A21B3818A4792C000D6D96 /* ReachAble.m */,
+				086417CA18866945005A2D43 /* BoutiqueModel.h */,
+				086417CB18866945005A2D43 /* BoutiqueModel.m */,
+				086417EB18867B09005A2D43 /* ActivityModel.h */,
+				086417EC18867B09005A2D43 /* ActivityModel.m */,
+				08BC3F2318AA00B3006B4D01 /* AccoutInfo.h */,
+				08BC3F2418AA00B3006B4D01 /* AccoutInfo.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0864173E18866218005A2D43 /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				089D5CEE18B1EFEE003B1842 /* images */,
+				089847DD18AC65B700232262 /* MJRefresh */,
+				08BC3F1218A9FE37006B4D01 /* FMDatabase.h */,
+				08BC3F1318A9FE37006B4D01 /* FMDatabase.m */,
+				08BC3F1418A9FE37006B4D01 /* FMDatabaseAdditions.h */,
+				08BC3F1518A9FE37006B4D01 /* FMDatabaseAdditions.m */,
+				08BC3F1618A9FE37006B4D01 /* FMDatabasePool.h */,
+				08BC3F1718A9FE37006B4D01 /* FMDatabasePool.m */,
+				08BC3F1818A9FE37006B4D01 /* FMDatabaseQueue.h */,
+				08BC3F1918A9FE37006B4D01 /* FMDatabaseQueue.m */,
+				08BC3F1A18A9FE37006B4D01 /* FMResultSet.h */,
+				08BC3F1B18A9FE37006B4D01 /* FMResultSet.m */,
+				086417AD188665C8005A2D43 /* EGOTableViewPullRefresh */,
+				086417AA188663E6005A2D43 /* DBManger.h */,
+				086417AB188663E6005A2D43 /* DBManger.m */,
+				0896C1B618A8E11F00718579 /* FMDBase.h */,
+				0896C1B718A8E11F00718579 /* FMDBase.m */,
+				0864175A18866218005A2D43 /* HttpRequest.h */,
+				0864175B18866218005A2D43 /* HttpRequest.m */,
+				0864173F18866218005A2D43 /* ASIHttpRequst */,
+				0864175718866218005A2D43 /* GData */,
+				0864175C18866218005A2D43 /* SDWebImage */,
+			);
+			path = Resouce;
+			sourceTree = "<group>";
+		};
+		0864173F18866218005A2D43 /* ASIHttpRequst */ = {
+			isa = PBXGroup;
+			children = (
+				0864174018866218005A2D43 /* ASIAuthenticationDialog.h */,
+				0864174118866218005A2D43 /* ASIAuthenticationDialog.m */,
+				0864174218866218005A2D43 /* ASICacheDelegate.h */,
+				0864174318866218005A2D43 /* ASIDataCompressor.h */,
+				0864174418866218005A2D43 /* ASIDataCompressor.m */,
+				0864174518866218005A2D43 /* ASIDataDecompressor.h */,
+				0864174618866218005A2D43 /* ASIDataDecompressor.m */,
+				0864174718866218005A2D43 /* ASIDownloadCache.h */,
+				0864174818866218005A2D43 /* ASIDownloadCache.m */,
+				0864174918866218005A2D43 /* ASIFormDataRequest.h */,
+				0864174A18866218005A2D43 /* ASIFormDataRequest.m */,
+				0864174B18866218005A2D43 /* ASIHTTPRequest.h */,
+				0864174C18866218005A2D43 /* ASIHTTPRequest.m */,
+				0864174D18866218005A2D43 /* ASIHTTPRequestConfig.h */,
+				0864174E18866218005A2D43 /* ASIHTTPRequestDelegate.h */,
+				0864174F18866218005A2D43 /* ASIInputStream.h */,
+				0864175018866218005A2D43 /* ASIInputStream.m */,
+				0864175118866218005A2D43 /* ASINetworkQueue.h */,
+				0864175218866218005A2D43 /* ASINetworkQueue.m */,
+				0864175318866218005A2D43 /* ASIProgressDelegate.h */,
+				0864175418866218005A2D43 /* Reachability.h */,
+				0864175518866218005A2D43 /* Reachability.m */,
+			);
+			path = ASIHttpRequst;
+			sourceTree = "<group>";
+		};
+		0864175718866218005A2D43 /* GData */ = {
+			isa = PBXGroup;
+			children = (
+				0864175818866218005A2D43 /* GDataXMLNode.h */,
+				0864175918866218005A2D43 /* GDataXMLNode.m */,
+			);
+			path = GData;
+			sourceTree = "<group>";
+		};
+		0864175C18866218005A2D43 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				0864176118866218005A2D43 /* LICENSE */,
+				0864176218866218005A2D43 /* README.md */,
+				0864176C18866218005A2D43 /* SDImageCache.h */,
+				0864176D18866218005A2D43 /* SDImageCache.m */,
+				0864176E18866218005A2D43 /* SDImageCacheDelegate.h */,
+				0864176F18866218005A2D43 /* SDWebImageCompat.h */,
+				0864177018866218005A2D43 /* SDWebImageDecoder.h */,
+				0864177118866218005A2D43 /* SDWebImageDecoder.m */,
+				0864177218866218005A2D43 /* SDWebImageDownloader.h */,
+				0864177318866218005A2D43 /* SDWebImageDownloader.m */,
+				0864177418866218005A2D43 /* SDWebImageDownloaderDelegate.h */,
+				0864177518866218005A2D43 /* SDWebImageManager.h */,
+				0864177618866218005A2D43 /* SDWebImageManager.m */,
+				0864177718866218005A2D43 /* SDWebImageManagerDelegate.h */,
+				0864177818866218005A2D43 /* SDWebImagePrefetcher.h */,
+				0864177918866218005A2D43 /* SDWebImagePrefetcher.m */,
+				0864177A18866218005A2D43 /* UIButton+WebCache.h */,
+				0864177B18866218005A2D43 /* UIButton+WebCache.m */,
+				0864177C18866218005A2D43 /* UIImageView+WebCache.h */,
+				0864177D18866218005A2D43 /* UIImageView+WebCache.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		086417AD188665C8005A2D43 /* EGOTableViewPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				086417AE188665C8005A2D43 /* Classes */,
+				086417B2188665C8005A2D43 /* Resources */,
+			);
+			path = EGOTableViewPullRefresh;
+			sourceTree = "<group>";
+		};
+		086417AE188665C8005A2D43 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				086417AF188665C8005A2D43 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		086417AF188665C8005A2D43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				086417B0188665C8005A2D43 /* EGORefreshTableHeaderView.h */,
+				086417B1188665C8005A2D43 /* EGORefreshTableHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		086417B2188665C8005A2D43 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				086417B3188665C8005A2D43 /* blackArrow.png */,
+				086417B4188665C8005A2D43 /* blackArrow@2x.png */,
+				086417B5188665C8005A2D43 /* blueArrow.png */,
+				086417B6188665C8005A2D43 /* blueArrow@2x.png */,
+				086417B7188665C8005A2D43 /* grayArrow.png */,
+				086417B8188665C8005A2D43 /* grayArrow@2x.png */,
+				086417B9188665C8005A2D43 /* whiteArrow.png */,
+				086417BA188665C8005A2D43 /* whiteArrow@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		086417C4188668C0005A2D43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				086417C5188668C0005A2D43 /* BoutiqueCell.h */,
+				086417C6188668C0005A2D43 /* BoutiqueCell.m */,
+				086417C7188668C0005A2D43 /* BoutiqueCell.xib */,
+				086417E618867979005A2D43 /* ActivityCell.h */,
+				086417E718867979005A2D43 /* ActivityCell.m */,
+				086417E918867993005A2D43 /* ActivityCell.xib */,
+				089D5CE618B1AE4B003B1842 /* SetterCell.h */,
+				089D5CE718B1AE4B003B1842 /* SetterCell.m */,
+				089D5CE918B1AE67003B1842 /* SetterCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		089847DD18AC65B700232262 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				089847DE18AC65B700232262 /* MJRefresh.bundle */,
+				089847DF18AC65B700232262 /* MJRefresh.h */,
+				089847E018AC65B700232262 /* MJRefreshBaseView.h */,
+				089847E118AC65B700232262 /* MJRefreshBaseView.m */,
+				089847E218AC65B700232262 /* MJRefreshConst.h */,
+				089847E318AC65B700232262 /* MJRefreshConst.m */,
+				089847E418AC65B700232262 /* MJRefreshFooterView.h */,
+				089847E518AC65B700232262 /* MJRefreshFooterView.m */,
+				089847E618AC65B700232262 /* MJRefreshHeaderView.h */,
+				089847E718AC65B700232262 /* MJRefreshHeaderView.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		089D5CEE18B1EFEE003B1842 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				089D5CEF18B1EFEE003B1842 /* Default.png */,
+				089D5CF018B1EFEE003B1842 /* Default~iphone.png */,
+				089D5CF118B1EFEE003B1842 /* Default-568h@2x.png */,
+				089D5CF218B1EFEE003B1842 /* icon-60@2X.png */,
+				089D5CF318B1EFEE003B1842 /* icon.png */,
+				089D5CF418B1EFEE003B1842 /* icon@2X.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		08BC3F2818AA0AE6006B4D01 /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				08BC3F2D18AA0B40006B4D01 /* Localizable.strings */,
+			);
+			name = Languages;
+			sourceTree = "<group>";
+		};
+		08EA9A7418C5E39000C39503 /* Image.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				08EA9A7518C5E39000C39503 /* Contents.json */,
+			);
+			path = Image.imageset;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		086416D818865D51005A2D43 /* StarkBRGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0864170518865D51005A2D43 /* Build configuration list for PBXNativeTarget "StarkBRGame" */;
+			buildPhases = (
+				086416D518865D51005A2D43 /* Sources */,
+				086416D618865D51005A2D43 /* Frameworks */,
+				086416D718865D51005A2D43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarkBRGame;
+			productName = StarkBRGame;
+			productReference = 086416D918865D51005A2D43 /* StarkBRGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		086416F318865D51005A2D43 /* StarkBRGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0864170818865D51005A2D43 /* Build configuration list for PBXNativeTarget "StarkBRGameTests" */;
+			buildPhases = (
+				086416F018865D51005A2D43 /* Sources */,
+				086416F118865D51005A2D43 /* Frameworks */,
+				086416F218865D51005A2D43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				086416FA18865D51005A2D43 /* PBXTargetDependency */,
+			);
+			name = StarkBRGameTests;
+			productName = StarkBRGameTests;
+			productReference = 086416F418865D51005A2D43 /* StarkBRGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		086416D118865D51005A2D43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "斯塔克互动科技有限公司";
+				TargetAttributes = {
+					086416D818865D51005A2D43 = {
+						DevelopmentTeam = 4WMXPE8KH8;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
+					086416F318865D51005A2D43 = {
+						TestTargetID = 086416D818865D51005A2D43;
+					};
+				};
+			};
+			buildConfigurationList = 086416D418865D51005A2D43 /* Build configuration list for PBXProject "StarkBRGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = 086416D018865D51005A2D43;
+			productRefGroup = 086416DA18865D51005A2D43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				086416D818865D51005A2D43 /* StarkBRGame */,
+				086416F318865D51005A2D43 /* StarkBRGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		086416D718865D51005A2D43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086416E718865D51005A2D43 /* InfoPlist.strings in Resources */,
+				086417C9188668C0005A2D43 /* BoutiqueCell.xib in Resources */,
+				0864179F188662A5005A2D43 /* STARKActivityViewController.xib in Resources */,
+				08EA9A7618C5E39000C39503 /* Contents.json in Resources */,
+				086417BE188665C8005A2D43 /* blueArrow.png in Resources */,
+				08B2335F18B60C0D00473063 /* STARKBoutiqueViewController_ipad.xib in Resources */,
+				083B247E188D1F1C007F4738 /* STARKActivityDetailViewController.xib in Resources */,
+				086417C3188665C8005A2D43 /* whiteArrow@2x.png in Resources */,
+				083B2480188D1F1C007F4738 /* STARKAPPDetailViewController.xib in Resources */,
+				089D5CF618B1EFEE003B1842 /* Default.png in Resources */,
+				086417A9188662FD005A2D43 /* STARKSetterViewController.xib in Resources */,
+				086417EA18867993005A2D43 /* ActivityCell.xib in Resources */,
+				086417C0188665C8005A2D43 /* grayArrow.png in Resources */,
+				089D5CF918B1EFEE003B1842 /* icon-60@2X.png in Resources */,
+				089D5CFB18B1EFEE003B1842 /* icon@2X.png in Resources */,
+				089D5CF718B1EFEE003B1842 /* Default~iphone.png in Resources */,
+				0899CBC118AB5F3D005432A5 /* STARKBoutiqueViewController.xib in Resources */,
+				083B2475188D1F11007F4738 /* STARKPersonalViewController.xib in Resources */,
+				086417C2188665C8005A2D43 /* whiteArrow.png in Resources */,
+				08BC3F2B18AA0B40006B4D01 /* Localizable.strings in Resources */,
+				086417BF188665C8005A2D43 /* blueArrow@2x.png in Resources */,
+				089D5CEA18B1AE67003B1842 /* SetterCell.xib in Resources */,
+				08C58B071887BF2F0060500F /* STARKLoginViewController.xib in Resources */,
+				086417BC188665C8005A2D43 /* blackArrow.png in Resources */,
+				086417C1188665C8005A2D43 /* grayArrow@2x.png in Resources */,
+				089847E818AC65B700232262 /* MJRefresh.bundle in Resources */,
+				0864178B18866218005A2D43 /* README.md in Resources */,
+				08AF8B6318BAF57E00BB7E88 /* GooglePlus.bundle in Resources */,
+				086417BD188665C8005A2D43 /* blackArrow@2x.png in Resources */,
+				089D5CFA18B1EFEE003B1842 /* icon.png in Resources */,
+				089D5CF818B1EFEE003B1842 /* Default-568h@2x.png in Resources */,
+				0864178A18866218005A2D43 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		086416F218865D51005A2D43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0864170018865D51005A2D43 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		086416D518865D51005A2D43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089847EB18AC65B700232262 /* MJRefreshFooterView.m in Sources */,
+				083B247D188D1F1C007F4738 /* STARKActivityDetailViewController.m in Sources */,
+				0864178618866218005A2D43 /* Reachability.m in Sources */,
+				089F866318A5E6860019B164 /* Purchase.m in Sources */,
+				086417ED18867B09005A2D43 /* ActivityModel.m in Sources */,
+				08BC3F2518AA00B3006B4D01 /* AccoutInfo.m in Sources */,
+				0864179E188662A5005A2D43 /* STARKActivityViewController.m in Sources */,
+				089847EA18AC65B700232262 /* MJRefreshConst.m in Sources */,
+				0864178718866218005A2D43 /* GDataXMLNode.m in Sources */,
+				0864177F18866218005A2D43 /* ASIDataCompressor.m in Sources */,
+				086417AC188663E6005A2D43 /* DBManger.m in Sources */,
+				08BC3F1D18A9FE37006B4D01 /* FMDatabaseAdditions.m in Sources */,
+				086417C8188668C0005A2D43 /* BoutiqueCell.m in Sources */,
+				086417E818867979005A2D43 /* ActivityCell.m in Sources */,
+				0864179918866218005A2D43 /* UIButton+WebCache.m in Sources */,
+				089847EC18AC65B700232262 /* MJRefreshHeaderView.m in Sources */,
+				086417A8188662FD005A2D43 /* STARKSetterViewController.m in Sources */,
+				083B247F188D1F1C007F4738 /* STARKAPPDetailViewController.m in Sources */,
+				088D2051189653ED006861AE /* STARKLoginViewController.m in Sources */,
+				086416ED18865D51005A2D43 /* AppDelegate.m in Sources */,
+				086416E918865D51005A2D43 /* main.m in Sources */,
+				089847E918AC65B700232262 /* MJRefreshBaseView.m in Sources */,
+				0864177E18866218005A2D43 /* ASIAuthenticationDialog.m in Sources */,
+				0864178218866218005A2D43 /* ASIFormDataRequest.m in Sources */,
+				0864178018866218005A2D43 /* ASIDataDecompressor.m in Sources */,
+				086417CC18866945005A2D43 /* BoutiqueModel.m in Sources */,
+				086417BB188665C8005A2D43 /* EGORefreshTableHeaderView.m in Sources */,
+				08BC3F1C18A9FE37006B4D01 /* FMDatabase.m in Sources */,
+				08BC3F1E18A9FE37006B4D01 /* FMDatabasePool.m in Sources */,
+				0864178418866218005A2D43 /* ASIInputStream.m in Sources */,
+				0864178518866218005A2D43 /* ASINetworkQueue.m in Sources */,
+				0864178318866218005A2D43 /* ASIHTTPRequest.m in Sources */,
+				08BC3F2018A9FE37006B4D01 /* FMResultSet.m in Sources */,
+				08A21B3918A4792C000D6D96 /* ReachAble.m in Sources */,
+				0864179418866218005A2D43 /* SDImageCache.m in Sources */,
+				083B2474188D1F11007F4738 /* STARKPersonalViewController.m in Sources */,
+				0864179618866218005A2D43 /* SDWebImageDownloader.m in Sources */,
+				0864179818866218005A2D43 /* SDWebImagePrefetcher.m in Sources */,
+				089D5CED18B1B3D3003B1842 /* StarkPurchaseViewController.m in Sources */,
+				0864178118866218005A2D43 /* ASIDownloadCache.m in Sources */,
+				0864178818866218005A2D43 /* HttpRequest.m in Sources */,
+				0864179718866218005A2D43 /* SDWebImageManager.m in Sources */,
+				0896C1B818A8E11F00718579 /* FMDBase.m in Sources */,
+				0864179518866218005A2D43 /* SDWebImageDecoder.m in Sources */,
+				0864179A18866218005A2D43 /* UIImageView+WebCache.m in Sources */,
+				0864170D18865D86005A2D43 /* RootViewController.m in Sources */,
+				08BC3F1F18A9FE37006B4D01 /* FMDatabaseQueue.m in Sources */,
+				089D5CE818B1AE4B003B1842 /* SetterCell.m in Sources */,
+				0899CBC018AB5F3D005432A5 /* STARKBoutiqueViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		086416F018865D51005A2D43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0864170218865D51005A2D43 /* StarkBRGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		086416FA18865D51005A2D43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 086416D818865D51005A2D43 /* StarkBRGame */;
+			targetProxy = 086416F918865D51005A2D43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		086416E518865D51005A2D43 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				086416E618865D51005A2D43 /* en */,
+				08BC3F2F18AA0B60006B4D01 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		086416FE18865D51005A2D43 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				086416FF18865D51005A2D43 /* en */,
+				08BC3F3018AA0B60006B4D01 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		08BC3F2D18AA0B40006B4D01 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08BC3F2C18AA0B40006B4D01 /* en */,
+				08BC3F2E18AA0B60006B4D01 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0864170318865D51005A2D43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0864170418865D51005A2D43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0864170618865D51005A2D43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: STARK INTERACTIVE TECHNOLOGY LIMITED (4WMXPE8KH8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: STARK INTERACTIVE TECHNOLOGY LIMITED (4WMXPE8KH8)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}",
+					"/Users/gaoyangchun/Desktop/工程/StarkBRGame",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StarkBRGame/StarkBRGame-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "StarkBRGame/StarkBRGame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "AEDC0935-C297-445E-B532-7D03658D3F6D";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0864170718865D51005A2D43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: STARK INTERACTIVE TECHNOLOGY LIMITED (4WMXPE8KH8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: STARK INTERACTIVE TECHNOLOGY LIMITED (4WMXPE8KH8)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}",
+					"/Users/gaoyangchun/Desktop/工程/StarkBRGame",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StarkBRGame/StarkBRGame-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "StarkBRGame/StarkBRGame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "AEDC0935-C297-445E-B532-7D03658D3F6D";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0864170918865D51005A2D43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StarkBRGame.app/StarkBRGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StarkBRGame/StarkBRGame-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StarkBRGameTests/StarkBRGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0864170A18865D51005A2D43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StarkBRGame.app/StarkBRGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StarkBRGame/StarkBRGame-Prefix.pch";
+				INFOPLIST_FILE = "StarkBRGameTests/StarkBRGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		086416D418865D51005A2D43 /* Build configuration list for PBXProject "StarkBRGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0864170318865D51005A2D43 /* Debug */,
+				0864170418865D51005A2D43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0864170518865D51005A2D43 /* Build configuration list for PBXNativeTarget "StarkBRGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0864170618865D51005A2D43 /* Debug */,
+				0864170718865D51005A2D43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0864170818865D51005A2D43 /* Build configuration list for PBXNativeTarget "StarkBRGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0864170918865D51005A2D43 /* Debug */,
+				0864170A18865D51005A2D43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 086416D118865D51005A2D43 /* Project object */;
+}
