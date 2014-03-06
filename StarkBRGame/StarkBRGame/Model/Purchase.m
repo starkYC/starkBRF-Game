@@ -8,6 +8,7 @@
 
 #import "Purchase.h"
 #import "DBManger.h"
+
 @implementation Purchase
 static Purchase *purchase = nil;
 @synthesize delegate = _delegate;
@@ -265,30 +266,55 @@ static Purchase *purchase = nil;
     
     NSURL *sandboxStoreURL = [[NSURL alloc] initWithString: @"https://sandbox.itunes.apple.com/verifyReceipt"];
     NSURL *StoreURL = [[NSURL alloc] initWithString: @"https://buy.itunes.apple.com/verifyReceipt"];
-	
     /*
         上线审核,也是用的这个地址sandboxStoreURL，
-                
         StoreURL 返回的status 21007
      */
-    
     NSData *postData = [NSData dataWithBytes:[sendString UTF8String] length:[sendString length]];
-	
-    STRLOG(@"status:%d",status);
-    NSMutableURLRequest *connectionRequest = [[NSMutableURLRequest alloc] init];
-    if (status == 0) {
-        [connectionRequest setURL:StoreURL];
-    }else if(status == 21007){
-        [connectionRequest setURL:sandboxStoreURL];
+    
+    ASIFormDataRequest *request = [[ASIFormDataRequest alloc] init];
+    if (status == 21007) {
+        [request setURL:sandboxStoreURL];
+    }else{
+        [request setURL:StoreURL];
     }
-    
-	[connectionRequest setHTTPMethod:@"POST"];
-	[connectionRequest setTimeoutInterval:120.0];
-	[connectionRequest setCachePolicy:NSURLRequestUseProtocolCachePolicy];
-	[connectionRequest setHTTPBody:postData];
-    
-	NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:connectionRequest delegate:self];
+    request.delegate = self;
+    [request setPostBody:(NSMutableData*)postData];
+    [request setRequestMethod:@"POST"];
+    [request startAsynchronous];
 }
+
+
+- (void)requestFinished:(ASIHTTPRequest *)request{
+    
+    id result = [NSJSONSerialization JSONObjectWithData:request.responseData options:NSJSONReadingMutableContainers error:nil];
+    if ([result isKindOfClass:[NSDictionary class]]) {
+        NSDictionary *dic = (NSDictionary *)result;
+        NSString *status = [dic objectForKey:@"status"];
+        STRLOG(@"status:%@",status);
+        if ([status intValue] == 0) {
+            //记录
+            [self recordLocalInfo:self.validProduct];
+            
+            if ([_delegate respondsToSelector:@selector(provideProduct:)]) {
+                [_delegate provideProduct:self.validProduct];
+            }
+            
+            
+        }else if([status intValue] == 21007){
+            
+            [self postToappStore:self.receive stutus:21007];
+            STRLOG(@"..认证失败");
+        }
+    }
+
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request{
+    
+    STRLOG(@"Ve:%@",request.error);
+}
+
 #pragma mark NSURLConnection Delegate
 
 

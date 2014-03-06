@@ -78,16 +78,7 @@
     return  isExist;
 }
 
-+(void)writeLogToFullPath:(NSString *)fullPath string:(NSString *)string append:(BOOL)flag
-{
-    NSDate* date = [NSDate date];
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"MM-dd HH:mm:ss:SS"];
-    
-    NSString* tmpMsg = [NSString stringWithFormat:@"%@:%@\n", [dateFormatter stringFromDate:date],string];
-    NSData *writer = [[NSData alloc] initWithData:[tmpMsg dataUsingEncoding:NSUTF8StringEncoding]];
-    [YCFileMgr saveDataToFullPath:fullPath data:writer append:flag];
-}
+
 /**
  *  @brief  获得指定目录下，指定后缀名的文件列表
  *  @param  type    文件后缀名

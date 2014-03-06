@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <StoreKit/StoreKit.h>
-
+#import "ASIFormDataRequest.h"
 @protocol PurchaseDelegate;
 
-@interface Purchase : NSObject<SKProductsRequestDelegate,SKPaymentTransactionObserver,NSURLConnectionDelegate>
+@interface Purchase : NSObject<SKProductsRequestDelegate,SKPaymentTransactionObserver,ASIHTTPRequestDelegate>
 
 @property(nonatomic,weak) id<PurchaseDelegate> delegate;
 

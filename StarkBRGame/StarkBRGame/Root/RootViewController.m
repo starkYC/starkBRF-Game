@@ -30,6 +30,7 @@
 @synthesize reqPage = _reqPage;
 @synthesize locPage = _locPage;
 @synthesize gameData = _gameData;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -70,7 +71,6 @@
 - (void)startRequest:(NSString*)url{
 
     if (![self checkNetWork]) {
-        
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"您的网络异常，请检查后重新刷新" message:nil delegate:self cancelButtonTitle:@"确认" otherButtonTitles:nil, nil];
         [alert show];
         return ;
@@ -78,14 +78,12 @@
     /*
      下拉刷新
      */
-    
-    STRLOG(@"reqPage:%d",self.reqPage);
     if (self.reqPage == 1  && self.reqPage < self.locPage ) {
         //清除gameData目录下游戏数据
         [YCFileMgr removeFile:[YCFileMgr getGameDataFile]];
     }
     if (![self checkOutLocalData:self.reqPage]) {
-        STRLOG(@"数据请求");
+        STRLOG(@"%d页,请求",self.reqPage);
         [self addMessage:url method:@selector(GameDataReceicve:)];
         [[YCGameMgr sharedInstance]getGameDataFromServer:url andPage:self.reqPage];
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
@@ -118,9 +116,20 @@
     }
 }
 - (void)showAlert:(NSInteger)code{
+  
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"加载失败" message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    alert.tag = 100;
     [alert show];
+   
 }
+- (void)viewDidDisappear:(BOOL)animated{
+    
+    [super viewDidDisappear:animated];
+    UIAlertView *alert = (UIAlertView *)[self.view viewWithTag:100];
+     [alert removeFromSuperview];
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

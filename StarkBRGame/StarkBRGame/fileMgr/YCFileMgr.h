@@ -44,7 +44,8 @@
  writeData：要保存的内容
  append：是否追加到文件
  */
-+(void)writeLogToFullPath:(NSString *)fullPath string:(NSString *)string append:(BOOL)flag;
+
+//+(void)writeLogToFullPath:(NSString *)fullPath string:(NSString *)string append:(BOOL)flag;
 
 //获取程序沙盒里document目录
 +(NSString*)getDocumentFile;
