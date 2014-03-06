@@ -15,6 +15,8 @@
 #import "STARKAPPDetailViewController.h"
 #import "ReachAble.h"
 #import "MJRefresh.h"
+#import "YCGameMgr.h"
+#import "YCFileMgr.h"
 
 @interface STARKBoutiqueViewController ()
 {
@@ -47,15 +49,35 @@
 
     _dataArray = [[NSMutableArray alloc] init];
     self.view.backgroundColor = [UIColor whiteColor];
-
     // 1集成刷新控件
     // 1.1.下拉刷新
     [self addHeader];
     
     // 1.2.上拉加载更多
     [self addFooter];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(GameDataReceicve:) name:@"https://itunes.apple.com/br/rss/topfreeapplications/limit=10/genre=6014/xml" object:nil];
+    
+  
 
 }
+
+- (BOOL)checkOutLocalData:(NSInteger)page{
+    
+    NSString * fileName = [NSString stringWithFormat:@"%d.txt",page];
+    NSString *gameDataPath = [YCFileMgr getGameDataFile];
+    NSString *pagePath = [gameDataPath stringByAppendingPathComponent:fileName];
+    STRLOG(@"pagePath:%@",pagePath);
+    NSData *data = [NSData dataWithContentsOfFile:pagePath];
+    
+    if (data ) {
+        self.gameData = (NSMutableData*)data;
+        return YES;
+    }else{
+        return NO;
+    }
+}
+
 
 #pragma mark
 
@@ -115,9 +137,22 @@
         return ;
     }
     STRLOG(@"数据请求");
-    [[DBManger shareManger] addGetTask:url type:1 isASI:NO];
-    [self addMessage:url method:@selector(updateData:)];
+    if (![self checkOutLocalData:self.page]) {
+       
+        [[YCGameMgr sharedInstance]getGameDataFromServer:@"https://itunes.apple.com/br/rss/topfreeapplications/limit=10/genre=6014/xml" andPage:self.page];
+    }else{
+       
+        [self reloadData:self.gameData];
+    }
+//    
+//    [[DBManger shareManger] addGetTask:url type:1 isASI:NO];
+//    [self addMessage:url method:@selector(updateData:)];
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+}
+- (void)GameDataReceicve:(NSNotification*)not{
+    
+    [self removeMessage:not.name];
+    STRLOG(@"GameDataReceicve");
 }
 
 - (NSString *)getValueWithElement:(GDataXMLElement *)element childName:(NSString *)name{
@@ -125,6 +160,10 @@
     NSArray *array = [element elementsForName:name];
     GDataXMLElement *child = (GDataXMLElement  *)[array objectAtIndex:0];
     return child.stringValue;
+}
+
+- (void)reloadData:(NSData*)data{
+
 }
 
 - (void)updateData:(NSNotification*)not{

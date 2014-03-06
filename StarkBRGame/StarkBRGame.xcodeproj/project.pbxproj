@@ -50,15 +50,6 @@
 		086417A8188662FD005A2D43 /* STARKSetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086417A6188662FD005A2D43 /* STARKSetterViewController.m */; };
 		086417A9188662FD005A2D43 /* STARKSetterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086417A7188662FD005A2D43 /* STARKSetterViewController.xib */; };
 		086417AC188663E6005A2D43 /* DBManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 086417AB188663E6005A2D43 /* DBManger.m */; };
-		086417BB188665C8005A2D43 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 086417B1188665C8005A2D43 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		086417BC188665C8005A2D43 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417B3188665C8005A2D43 /* blackArrow.png */; };
-		086417BD188665C8005A2D43 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417B4188665C8005A2D43 /* blackArrow@2x.png */; };
-		086417BE188665C8005A2D43 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417B5188665C8005A2D43 /* blueArrow.png */; };
-		086417BF188665C8005A2D43 /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417B6188665C8005A2D43 /* blueArrow@2x.png */; };
-		086417C0188665C8005A2D43 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417B7188665C8005A2D43 /* grayArrow.png */; };
-		086417C1188665C8005A2D43 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417B8188665C8005A2D43 /* grayArrow@2x.png */; };
-		086417C2188665C8005A2D43 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417B9188665C8005A2D43 /* whiteArrow.png */; };
-		086417C3188665C8005A2D43 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 086417BA188665C8005A2D43 /* whiteArrow@2x.png */; };
 		086417C8188668C0005A2D43 /* BoutiqueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 086417C6188668C0005A2D43 /* BoutiqueCell.m */; };
 		086417C9188668C0005A2D43 /* BoutiqueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086417C7188668C0005A2D43 /* BoutiqueCell.xib */; };
 		086417CC18866945005A2D43 /* BoutiqueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 086417CB18866945005A2D43 /* BoutiqueModel.m */; };
@@ -99,6 +90,8 @@
 		089D5CFB18B1EFEE003B1842 /* icon@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 089D5CF418B1EFEE003B1842 /* icon@2X.png */; };
 		089F866318A5E6860019B164 /* Purchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 089F866218A5E6860019B164 /* Purchase.m */; };
 		08A21B3918A4792C000D6D96 /* ReachAble.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A21B3818A4792C000D6D96 /* ReachAble.m */; };
+		08A8C35218C72C7700C9E536 /* YCRequestCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C35118C72C7700C9E536 /* YCRequestCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		08A8C35F18C72DFA00C9E536 /* YCFileMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8C35E18C72DFA00C9E536 /* YCFileMgr.m */; };
 		08AF8B6218BAF57E00BB7E88 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AF8B5E18BAF57D00BB7E88 /* GoogleOpenSource.framework */; };
 		08AF8B6318BAF57E00BB7E88 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 08AF8B5F18BAF57D00BB7E88 /* GooglePlus.bundle */; };
 		08AF8B6418BAF57E00BB7E88 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AF8B6018BAF57D00BB7E88 /* GooglePlus.framework */; };
@@ -112,6 +105,8 @@
 		08BC3F2518AA00B3006B4D01 /* AccoutInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC3F2418AA00B3006B4D01 /* AccoutInfo.m */; };
 		08BC3F2B18AA0B40006B4D01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08BC3F2D18AA0B40006B4D01 /* Localizable.strings */; };
 		08C58B071887BF2F0060500F /* STARKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C58B051887BF2F0060500F /* STARKLoginViewController.xib */; };
+		08DB3BE418C8111F003B8583 /* YCRequestParas.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB3BE318C8111F003B8583 /* YCRequestParas.m */; };
+		08DB3BE618C81F90003B8583 /* YCGameMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB3BE518C81F90003B8583 /* YCGameMgr.m */; };
 		08EA9A7118C5B62000C39503 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA9A7018C5B62000C39503 /* FacebookSDK.framework */; };
 		08EA9A7618C5E39000C39503 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 08EA9A7518C5E39000C39503 /* Contents.json */; };
 /* End PBXBuildFile section */
@@ -207,16 +202,6 @@
 		086417A7188662FD005A2D43 /* STARKSetterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = STARKSetterViewController.xib; path = FirstController/STARKSetterViewController.xib; sourceTree = "<group>"; };
 		086417AA188663E6005A2D43 /* DBManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManger.h; sourceTree = "<group>"; };
 		086417AB188663E6005A2D43 /* DBManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManger.m; sourceTree = "<group>"; };
-		086417B0188665C8005A2D43 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
-		086417B1188665C8005A2D43 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
-		086417B3188665C8005A2D43 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
-		086417B4188665C8005A2D43 /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
-		086417B5188665C8005A2D43 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
-		086417B6188665C8005A2D43 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
-		086417B7188665C8005A2D43 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
-		086417B8188665C8005A2D43 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
-		086417B9188665C8005A2D43 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
-		086417BA188665C8005A2D43 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
 		086417C5188668C0005A2D43 /* BoutiqueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoutiqueCell.h; sourceTree = "<group>"; };
 		086417C6188668C0005A2D43 /* BoutiqueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoutiqueCell.m; sourceTree = "<group>"; };
 		086417C7188668C0005A2D43 /* BoutiqueCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoutiqueCell.xib; sourceTree = "<group>"; };
@@ -272,6 +257,11 @@
 		089F866218A5E6860019B164 /* Purchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Purchase.m; path = Model/Purchase.m; sourceTree = "<group>"; };
 		08A21B3718A4792C000D6D96 /* ReachAble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachAble.h; sourceTree = "<group>"; };
 		08A21B3818A4792C000D6D96 /* ReachAble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachAble.m; sourceTree = "<group>"; };
+		08A8C35018C72C7700C9E536 /* YCRequestCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCRequestCenter.h; sourceTree = "<group>"; };
+		08A8C35118C72C7700C9E536 /* YCRequestCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCRequestCenter.m; sourceTree = "<group>"; };
+		08A8C35D18C72DFA00C9E536 /* YCFileMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCFileMgr.h; sourceTree = "<group>"; };
+		08A8C35E18C72DFA00C9E536 /* YCFileMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCFileMgr.m; sourceTree = "<group>"; };
+		08A8C36018C72EC600C9E536 /* YCGameMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCGameMgr.h; sourceTree = "<group>"; };
 		08AF8B5E18BAF57D00BB7E88 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
 		08AF8B5F18BAF57D00BB7E88 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
 		08AF8B6018BAF57D00BB7E88 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
@@ -295,6 +285,9 @@
 		08BC3F3018AA0B60006B4D01 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		08C58B031887BF2F0060500F /* STARKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STARKLoginViewController.h; path = FirstController/STARKLoginViewController.h; sourceTree = "<group>"; };
 		08C58B051887BF2F0060500F /* STARKLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = STARKLoginViewController.xib; path = FirstController/STARKLoginViewController.xib; sourceTree = "<group>"; };
+		08DB3BE218C8111F003B8583 /* YCRequestParas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCRequestParas.h; sourceTree = "<group>"; };
+		08DB3BE318C8111F003B8583 /* YCRequestParas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCRequestParas.m; sourceTree = "<group>"; };
+		08DB3BE518C81F90003B8583 /* YCGameMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCGameMgr.m; sourceTree = "<group>"; };
 		08E6047718C5768000056925 /* command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = command.h; sourceTree = "<group>"; };
 		08EA9A7018C5B62000C39503 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		08EA9A7518C5E39000C39503 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
@@ -412,6 +405,8 @@
 			children = (
 				086416EB18865D51005A2D43 /* AppDelegate.h */,
 				086416EC18865D51005A2D43 /* AppDelegate.m */,
+				08A8C35C18C72DFA00C9E536 /* fileMgr */,
+				08A8C34F18C72C5000C9E536 /* NetWork */,
 				0864170E18865D8C005A2D43 /* Root */,
 				0864171018865DA0005A2D43 /* FirstController */,
 				083B2476188D1F1C007F4738 /* SecondController */,
@@ -519,7 +514,6 @@
 				08BC3F1918A9FE37006B4D01 /* FMDatabaseQueue.m */,
 				08BC3F1A18A9FE37006B4D01 /* FMResultSet.h */,
 				08BC3F1B18A9FE37006B4D01 /* FMResultSet.m */,
-				086417AD188665C8005A2D43 /* EGOTableViewPullRefresh */,
 				086417AA188663E6005A2D43 /* DBManger.h */,
 				086417AB188663E6005A2D43 /* DBManger.m */,
 				0896C1B618A8E11F00718579 /* FMDBase.h */,
@@ -598,47 +592,6 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
-		086417AD188665C8005A2D43 /* EGOTableViewPullRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				086417AE188665C8005A2D43 /* Classes */,
-				086417B2188665C8005A2D43 /* Resources */,
-			);
-			path = EGOTableViewPullRefresh;
-			sourceTree = "<group>";
-		};
-		086417AE188665C8005A2D43 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				086417AF188665C8005A2D43 /* View */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		086417AF188665C8005A2D43 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				086417B0188665C8005A2D43 /* EGORefreshTableHeaderView.h */,
-				086417B1188665C8005A2D43 /* EGORefreshTableHeaderView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		086417B2188665C8005A2D43 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				086417B3188665C8005A2D43 /* blackArrow.png */,
-				086417B4188665C8005A2D43 /* blackArrow@2x.png */,
-				086417B5188665C8005A2D43 /* blueArrow.png */,
-				086417B6188665C8005A2D43 /* blueArrow@2x.png */,
-				086417B7188665C8005A2D43 /* grayArrow.png */,
-				086417B8188665C8005A2D43 /* grayArrow@2x.png */,
-				086417B9188665C8005A2D43 /* whiteArrow.png */,
-				086417BA188665C8005A2D43 /* whiteArrow@2x.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		086417C4188668C0005A2D43 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -683,6 +636,28 @@
 				089D5CF418B1EFEE003B1842 /* icon@2X.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		08A8C34F18C72C5000C9E536 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				08A8C35018C72C7700C9E536 /* YCRequestCenter.h */,
+				08A8C35118C72C7700C9E536 /* YCRequestCenter.m */,
+				08DB3BE218C8111F003B8583 /* YCRequestParas.h */,
+				08DB3BE318C8111F003B8583 /* YCRequestParas.m */,
+			);
+			name = NetWork;
+			sourceTree = "<group>";
+		};
+		08A8C35C18C72DFA00C9E536 /* fileMgr */ = {
+			isa = PBXGroup;
+			children = (
+				08A8C35D18C72DFA00C9E536 /* YCFileMgr.h */,
+				08A8C35E18C72DFA00C9E536 /* YCFileMgr.m */,
+				08A8C36018C72EC600C9E536 /* YCGameMgr.h */,
+				08DB3BE518C81F90003B8583 /* YCGameMgr.m */,
+			);
+			path = fileMgr;
 			sourceTree = "<group>";
 		};
 		08BC3F2818AA0AE6006B4D01 /* Languages */ = {
@@ -792,31 +767,23 @@
 				086417C9188668C0005A2D43 /* BoutiqueCell.xib in Resources */,
 				0864179F188662A5005A2D43 /* STARKActivityViewController.xib in Resources */,
 				08EA9A7618C5E39000C39503 /* Contents.json in Resources */,
-				086417BE188665C8005A2D43 /* blueArrow.png in Resources */,
 				08B2335F18B60C0D00473063 /* STARKBoutiqueViewController_ipad.xib in Resources */,
 				083B247E188D1F1C007F4738 /* STARKActivityDetailViewController.xib in Resources */,
-				086417C3188665C8005A2D43 /* whiteArrow@2x.png in Resources */,
 				083B2480188D1F1C007F4738 /* STARKAPPDetailViewController.xib in Resources */,
 				089D5CF618B1EFEE003B1842 /* Default.png in Resources */,
 				086417A9188662FD005A2D43 /* STARKSetterViewController.xib in Resources */,
 				086417EA18867993005A2D43 /* ActivityCell.xib in Resources */,
-				086417C0188665C8005A2D43 /* grayArrow.png in Resources */,
 				089D5CF918B1EFEE003B1842 /* icon-60@2X.png in Resources */,
 				089D5CFB18B1EFEE003B1842 /* icon@2X.png in Resources */,
 				089D5CF718B1EFEE003B1842 /* Default~iphone.png in Resources */,
 				0899CBC118AB5F3D005432A5 /* STARKBoutiqueViewController.xib in Resources */,
 				083B2475188D1F11007F4738 /* STARKPersonalViewController.xib in Resources */,
-				086417C2188665C8005A2D43 /* whiteArrow.png in Resources */,
 				08BC3F2B18AA0B40006B4D01 /* Localizable.strings in Resources */,
-				086417BF188665C8005A2D43 /* blueArrow@2x.png in Resources */,
 				089D5CEA18B1AE67003B1842 /* SetterCell.xib in Resources */,
 				08C58B071887BF2F0060500F /* STARKLoginViewController.xib in Resources */,
-				086417BC188665C8005A2D43 /* blackArrow.png in Resources */,
-				086417C1188665C8005A2D43 /* grayArrow@2x.png in Resources */,
 				089847E818AC65B700232262 /* MJRefresh.bundle in Resources */,
 				0864178B18866218005A2D43 /* README.md in Resources */,
 				08AF8B6318BAF57E00BB7E88 /* GooglePlus.bundle in Resources */,
-				086417BD188665C8005A2D43 /* blackArrow@2x.png in Resources */,
 				089D5CFA18B1EFEE003B1842 /* icon.png in Resources */,
 				089D5CF818B1EFEE003B1842 /* Default-568h@2x.png in Resources */,
 				0864178A18866218005A2D43 /* LICENSE in Resources */,
@@ -840,6 +807,7 @@
 			files = (
 				089847EB18AC65B700232262 /* MJRefreshFooterView.m in Sources */,
 				083B247D188D1F1C007F4738 /* STARKActivityDetailViewController.m in Sources */,
+				08DB3BE618C81F90003B8583 /* YCGameMgr.m in Sources */,
 				0864178618866218005A2D43 /* Reachability.m in Sources */,
 				089F866318A5E6860019B164 /* Purchase.m in Sources */,
 				086417ED18867B09005A2D43 /* ActivityModel.m in Sources */,
@@ -851,6 +819,7 @@
 				086417AC188663E6005A2D43 /* DBManger.m in Sources */,
 				08BC3F1D18A9FE37006B4D01 /* FMDatabaseAdditions.m in Sources */,
 				086417C8188668C0005A2D43 /* BoutiqueCell.m in Sources */,
+				08DB3BE418C8111F003B8583 /* YCRequestParas.m in Sources */,
 				086417E818867979005A2D43 /* ActivityCell.m in Sources */,
 				0864179918866218005A2D43 /* UIButton+WebCache.m in Sources */,
 				089847EC18AC65B700232262 /* MJRefreshHeaderView.m in Sources */,
@@ -864,7 +833,6 @@
 				0864178218866218005A2D43 /* ASIFormDataRequest.m in Sources */,
 				0864178018866218005A2D43 /* ASIDataDecompressor.m in Sources */,
 				086417CC18866945005A2D43 /* BoutiqueModel.m in Sources */,
-				086417BB188665C8005A2D43 /* EGORefreshTableHeaderView.m in Sources */,
 				08BC3F1C18A9FE37006B4D01 /* FMDatabase.m in Sources */,
 				08BC3F1E18A9FE37006B4D01 /* FMDatabasePool.m in Sources */,
 				0864178418866218005A2D43 /* ASIInputStream.m in Sources */,
@@ -872,6 +840,7 @@
 				0864178318866218005A2D43 /* ASIHTTPRequest.m in Sources */,
 				08BC3F2018A9FE37006B4D01 /* FMResultSet.m in Sources */,
 				08A21B3918A4792C000D6D96 /* ReachAble.m in Sources */,
+				08A8C35F18C72DFA00C9E536 /* YCFileMgr.m in Sources */,
 				0864179418866218005A2D43 /* SDImageCache.m in Sources */,
 				083B2474188D1F11007F4738 /* STARKPersonalViewController.m in Sources */,
 				0864179618866218005A2D43 /* SDWebImageDownloader.m in Sources */,
@@ -885,6 +854,7 @@
 				0864179A18866218005A2D43 /* UIImageView+WebCache.m in Sources */,
 				0864170D18865D86005A2D43 /* RootViewController.m in Sources */,
 				08BC3F1F18A9FE37006B4D01 /* FMDatabaseQueue.m in Sources */,
+				08A8C35218C72C7700C9E536 /* YCRequestCenter.m in Sources */,
 				089D5CE818B1AE4B003B1842 /* SetterCell.m in Sources */,
 				0899CBC018AB5F3D005432A5 /* STARKBoutiqueViewController.m in Sources */,
 			);
@@ -1020,7 +990,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}",
-					"/Users/gaoyangchun/Desktop/工程/StarkBRGame",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1048,7 +1017,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}",
-					"/Users/gaoyangchun/Desktop/工程/StarkBRGame",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
