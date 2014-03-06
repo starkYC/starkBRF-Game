@@ -5,13 +5,14 @@
 //  Created by gaoyangchun on 14-3-5.
 //  Copyright (c) 2014年 斯塔克互动科技有限公司. All rights reserved.
 //
-
 /*
     游戏数据管理
  */
 #import <Foundation/Foundation.h>
 #import "ASIHTTPRequest.h"
 #import "ASIHTTPRequestDelegate.h"
+
+#define RequestError @"RequestError"
 
 @interface YCGameMgr : NSObject<ASIHTTPRequestDelegate>
 

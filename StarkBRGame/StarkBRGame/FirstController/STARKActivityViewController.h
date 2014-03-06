@@ -10,6 +10,7 @@
 //活动页面
 
 @interface STARKActivityViewController : RootViewController
+
 @property (weak, nonatomic) IBOutlet UITableView *activityTableView;
 
 

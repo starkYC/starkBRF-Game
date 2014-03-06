@@ -16,7 +16,7 @@
     self = [super init];
     if(self)
     {
-        self.httpMothod = HTTP_MOTHOD_POST;
+        self.httpMothod = HTTP_MOTHOD_GET;
         self.dataFormart = HTTP_DATA_FORMART_XML;
         
         self.reqData = nil;

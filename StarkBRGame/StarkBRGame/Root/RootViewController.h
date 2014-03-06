@@ -8,15 +8,25 @@
 
 #import <UIKit/UIKit.h>
 #import "DBManger.h"
+#import "MJRefreshBaseView.h"
 
 @interface RootViewController : UIViewController
-
 
 //注册消息
 - (void)addMessage:(NSString*)messageName method:(SEL)method;
 
 //移除消息
 - (void)removeMessage:(NSString*)messageName;
+//当前请求页数
+@property (nonatomic,assign) NSInteger reqPage;
+//当前已经请求过的页数
+@property (nonatomic,assign) NSInteger locPage ;
+@property (nonatomic,strong) NSMutableData *gameData ;
 
+- (void)GameDataReceicve:(NSNotification*)Notifi;
+- (void)startRequest:(NSString*)url;
+- (BOOL)checkOutLocalData:(NSInteger)page;
+- (void)showAlert:(NSInteger)code;
+- (BOOL)checkNetWork;
 
 @end

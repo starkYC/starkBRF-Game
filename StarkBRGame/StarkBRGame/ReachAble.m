@@ -33,20 +33,17 @@ static ReachAble *reachAble = nil;
     
     switch ([reach currentReachabilityStatus]) {
         case NotReachable:{
-     
-            STRLOG(@"NotReachable");
+            NSLog(@"Not");
             isExitNetWork = NO;
         }
             break;
             
         case ReachableViaWiFi  :{
-            STRLOG(@"wifi");
             isExitNetWork = YES;
         }
             break;
            
         case ReachableViaWWAN:{
-            STRLOG(@"3g");
             isExitNetWork = YES;
         }
             break;

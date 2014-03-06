@@ -22,7 +22,7 @@
  writeData：要保存的内容
  append：是否追加到文件
  */
-+(BOOL)saveStringToFullPath:(NSString*)fullPath string:(NSString*)string append:(BOOL)flag;
+//+(BOOL)saveStringToFullPath:(NSString*)fullPath string:(NSString*)string append:(BOOL)flag;
 
 /*
  保存NSData到文件

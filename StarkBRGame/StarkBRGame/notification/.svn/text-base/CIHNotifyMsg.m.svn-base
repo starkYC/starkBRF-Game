@@ -1,0 +1,39 @@
+//
+//  CIHNotifyMsg.m
+//  smartcar
+//
+//  Created by vic.zh on 13-12-17.
+//  Copyright (c) 2013年 vic.zh. All rights reserved.
+//
+
+#import "CIHNotifyMsg.h"
+
+@implementation CIHNotifyMsg
+
+- (id)init
+{
+    self = [super init];
+    if(self)
+    {
+        self.code = -1;
+        self.msg = nil;
+        self.name = nil;
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    [_msg release];
+    [_name release];
+    [super dealloc];
+}
+
+//发送一个通知
++(void)postNotification:(NSString*)notifyName notifyObj:(CIHNotifyMsg*)obj
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:notifyName object:obj];
+}
+
+
+@end

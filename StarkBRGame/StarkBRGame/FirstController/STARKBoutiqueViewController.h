@@ -14,7 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *BoutiqueView;
 
-@property (nonatomic,assign) NSInteger page ;
-@property (nonatomic,strong) NSMutableData *gameData ;
+
+- (void)fillReqRefresh;
 
 @end

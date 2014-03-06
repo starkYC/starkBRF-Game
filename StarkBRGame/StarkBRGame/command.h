@@ -18,6 +18,18 @@
 #define STRLOG( s, ... )
 #endif
 
+#define HTTP_MOTHOD_POST        @"post"
+#define HTTP_MOTHOD_GET         @"get"
+#define HTTP_MOTHOD_UPLOADFILE  @"uploadfile"
+
+//响应通用字段
+#define HTTP_RESPONSE_XML_STATUSCODE        @"statuscode"
+#define HTTP_RESPONSE_XML_ERRORMESSAGE      @"errormessage"
+//标准http响应码
+#define HTTP_DEFAULT_RESP_CODE_200      200  //http请求返回成功
+//http数据格式
+#define HTTP_DATA_FORMART_XML   @"XML"
+#define HTTP_DATA_FORMART_JSON  @"JSON"
 
 #endif
 

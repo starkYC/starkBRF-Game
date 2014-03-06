@@ -8,7 +8,6 @@
 
 #import "STARKBoutiqueViewController.h"
 #import "GDataXMLNode.h"
-#import "DBManger.h"
 #import "BoutiqueCell.h"
 #import "BoutiqueModel.h"
 
@@ -17,12 +16,11 @@
 #import "MJRefresh.h"
 #import "YCGameMgr.h"
 #import "YCFileMgr.h"
+#import "YCNotifyMsg.h"
 
 @interface STARKBoutiqueViewController ()
 {
     NSMutableArray *_dataArray;
-    HttpRequest *request;
-    
     MJRefreshHeaderView *_header;
     MJRefreshFooterView *_footer;
     NSInteger Flag;
@@ -31,6 +29,7 @@
 
 @implementation STARKBoutiqueViewController
 @synthesize BoutiqueView = _BoutiqueView;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,11 +40,11 @@
     return self;
 }
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-      self.navigationController.navigationBar.translucent = NO;
+    
+    self.navigationController.navigationBar.translucent = NO;
 
     _dataArray = [[NSMutableArray alloc] init];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -55,40 +54,19 @@
     
     // 1.2.上拉加载更多
     [self addFooter];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(GameDataReceicve:) name:@"https://itunes.apple.com/br/rss/topfreeapplications/limit=10/genre=6014/xml" object:nil];
-    
-  
-
 }
-
-- (BOOL)checkOutLocalData:(NSInteger)page{
-    
-    NSString * fileName = [NSString stringWithFormat:@"%d.txt",page];
-    NSString *gameDataPath = [YCFileMgr getGameDataFile];
-    NSString *pagePath = [gameDataPath stringByAppendingPathComponent:fileName];
-    STRLOG(@"pagePath:%@",pagePath);
-    NSData *data = [NSData dataWithContentsOfFile:pagePath];
-    
-    if (data ) {
-        self.gameData = (NSMutableData*)data;
-        return YES;
-    }else{
-        return NO;
-    }
-}
-
 
 #pragma mark
 
 #pragma mark  下拉上拉刷新
 - (void)addHeader
 {
-    MJRefreshHeaderView *header = [MJRefreshHeaderView header];
+    MJRefreshHeaderView *header = [[MJRefreshHeaderView alloc] init];
     header.scrollView = self.BoutiqueView;
     header.beginRefreshingBlock = ^(MJRefreshBaseView *refreshView) {
         // 进入刷新状态就会回调这个Block
         Flag = 1;
+        self.reqPage  = 1;
         NSString *str =@"https://itunes.apple.com/br/rss/topfreeapplications/limit=10/genre=6014/xml";
         [self startRequest:str];
       //  STRLOG(@"%@----开始进入刷新状态", refreshView.class);
@@ -101,58 +79,55 @@
     MJRefreshFooterView *footer = [MJRefreshFooterView footer];
     footer.scrollView = self.BoutiqueView;
     footer.beginRefreshingBlock = ^(MJRefreshBaseView *refreshView) {
-        Flag = 0;
         NSString *strUrl = @"https://itunes.apple.com/br/rss/topfreeapplications/limit=10/genre=6014/xml";
+        Flag = 0;
+        self.reqPage ++;
         [self startRequest:strUrl];
       //  STRLOG(@"%@----开始进入刷新状态", refreshView.class);
     };
     _footer = footer;
 }
 
+- (void)startRequest:(NSString *)url{
+    
+    [super startRequest:url];
+    if (![self checkNetWork]) {
+        [self fillReqRefresh];
+    }
+    if ([self checkOutLocalData:self.reqPage]) {
+        [self reloadData:self.gameData];
+    }
+}
+
+- (void)fillReqRefresh{
+    if (Flag == 1) {
+        [self doneWithView:_header];
+    }else{
+        [self doneWithView:_footer];
+    }
+}
+
 - (void)doneWithView:(MJRefreshBaseView *)refreshView
 {
+ 
+    [refreshView endRefreshing];
     // 刷新表格
     [self.BoutiqueView reloadData];
     // (最好在刷新表格后调用)调用endRefreshing可以结束刷新状态
-    [refreshView endRefreshing];
 }
 
 #pragma mark
 
 #pragma mark 网络请求和解析
 
-- (void)startRequest:(NSString*)url{
+- (void)GameDataReceicve:(NSNotification*)Notifi{
     
-    BOOL isConnect = [[ReachAble reachAble] isConnectionAvailable];
-    if (isConnect == NO) {
-        
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"您的网络异常，请检查后重新刷新" message:nil delegate:self cancelButtonTitle:@"确认" otherButtonTitles:nil, nil];
-        
-        [alert show];
-        if (Flag == 1) {
-            [self doneWithView:_header];
-        }else{
-            [self doneWithView:_footer];
-        }
-        return ;
-    }
-    STRLOG(@"数据请求");
-    if (![self checkOutLocalData:self.page]) {
-       
-        [[YCGameMgr sharedInstance]getGameDataFromServer:@"https://itunes.apple.com/br/rss/topfreeapplications/limit=10/genre=6014/xml" andPage:self.page];
+    [super GameDataReceicve:Notifi];
+    if ( [YCNotifyMsg shareYCNotifyMsg].code == 0) {
+         [self reloadData:self.gameData];
     }else{
-       
-        [self reloadData:self.gameData];
+        [self fillReqRefresh];
     }
-//    
-//    [[DBManger shareManger] addGetTask:url type:1 isASI:NO];
-//    [self addMessage:url method:@selector(updateData:)];
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-}
-- (void)GameDataReceicve:(NSNotification*)not{
-    
-    [self removeMessage:not.name];
-    STRLOG(@"GameDataReceicve");
 }
 
 - (NSString *)getValueWithElement:(GDataXMLElement *)element childName:(NSString *)name{
@@ -164,52 +139,30 @@
 
 - (void)reloadData:(NSData*)data{
 
-}
-
-- (void)updateData:(NSNotification*)not{
-    
-    [self removeMessage:not.name];
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-    NSData *data = [[DBManger shareManger] objectForKey:not.name];
-    if ([data isEqual:@"1"]) {
-        
-       UIAlertView *alert =  [[UIAlertView alloc] initWithTitle:@"请求超时" message:nil delegate:self cancelButtonTitle:@"确认" otherButtonTitles:nil, nil];
-        [alert show];
-          [self doneWithView:_header];
-        return;
+    if (Flag == 1) {
+        [_dataArray removeAllObjects];
     }
-    if (data) {
-        STRLOG(@"data:%ld",(unsigned long)data.length);
-        if (Flag == 1) {
-              [_dataArray removeAllObjects];
-        }
-        GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:data options:0 error:nil];
-        //拿到根元素(节点)
-        GDataXMLElement *root = [doc rootElement];
-        NSArray *entrys = [root elementsForName:@"entry"];
-        NSMutableArray *array = [NSMutableArray array];
-        for (GDataXMLElement *entry in entrys) {
-            NSString *title = [self getValueWithElement:entry childName:@"title"];
-            NSString *summary = [self getValueWithElement:entry childName:@"summary"];
-            NSString *appID = [self getValueWithElement:entry childName:@"id"];
-            NSString *imageAdr = [self getValueWithElement:entry childName:@"im:image"];
-            NSString *price = [self getValueWithElement:entry childName:@"im:price"];
-            BoutiqueModel *model = [[BoutiqueModel alloc] init];
-            model.price = price;
-            model.title = title;
-            model.summary = summary;
-            model.imageAdr = imageAdr;
-            model.appID = appID;
-            [array addObject:model];
-            //  STRLOG(@"imageAdr:%@",imageAdr);
-        }
-        [_dataArray addObject:array];
-        if (Flag == 1) {
-             [self doneWithView:_header];
-        }else{
-             [self doneWithView:_footer];
-        }
+    GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:data options:0 error:nil];
+    //拿到根元素(节点)
+    GDataXMLElement *root = [doc rootElement];
+    NSArray *entrys = [root elementsForName:@"entry"];
+    NSMutableArray *array = [NSMutableArray array];
+    for (GDataXMLElement *entry in entrys) {
+        NSString *title = [self getValueWithElement:entry childName:@"title"];
+        NSString *summary = [self getValueWithElement:entry childName:@"summary"];
+        NSString *appID = [self getValueWithElement:entry childName:@"id"];
+        NSString *imageAdr = [self getValueWithElement:entry childName:@"im:image"];
+        NSString *price = [self getValueWithElement:entry childName:@"im:price"];
+        BoutiqueModel *model = [[BoutiqueModel alloc] init];
+        model.price = price;
+        model.title = title;
+        model.summary = summary;
+        model.imageAdr = imageAdr;
+        model.appID = appID;
+        [array addObject:model];
     }
+    [_dataArray addObject:array];
+    [self fillReqRefresh];
 }
 
 #pragma mark tableView delegate

@@ -107,6 +107,7 @@
 		08C58B071887BF2F0060500F /* STARKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C58B051887BF2F0060500F /* STARKLoginViewController.xib */; };
 		08DB3BE418C8111F003B8583 /* YCRequestParas.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB3BE318C8111F003B8583 /* YCRequestParas.m */; };
 		08DB3BE618C81F90003B8583 /* YCGameMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB3BE518C81F90003B8583 /* YCGameMgr.m */; };
+		08DB3BF518C831E6003B8583 /* YCNotifyMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB3BF418C831E6003B8583 /* YCNotifyMsg.m */; };
 		08EA9A7118C5B62000C39503 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA9A7018C5B62000C39503 /* FacebookSDK.framework */; };
 		08EA9A7618C5E39000C39503 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 08EA9A7518C5E39000C39503 /* Contents.json */; };
 /* End PBXBuildFile section */
@@ -288,6 +289,8 @@
 		08DB3BE218C8111F003B8583 /* YCRequestParas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCRequestParas.h; sourceTree = "<group>"; };
 		08DB3BE318C8111F003B8583 /* YCRequestParas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCRequestParas.m; sourceTree = "<group>"; };
 		08DB3BE518C81F90003B8583 /* YCGameMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCGameMgr.m; sourceTree = "<group>"; };
+		08DB3BF318C831E6003B8583 /* YCNotifyMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCNotifyMsg.h; sourceTree = "<group>"; };
+		08DB3BF418C831E6003B8583 /* YCNotifyMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCNotifyMsg.m; sourceTree = "<group>"; };
 		08E6047718C5768000056925 /* command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = command.h; sourceTree = "<group>"; };
 		08EA9A7018C5B62000C39503 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		08EA9A7518C5E39000C39503 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
@@ -645,6 +648,7 @@
 				08A8C35118C72C7700C9E536 /* YCRequestCenter.m */,
 				08DB3BE218C8111F003B8583 /* YCRequestParas.h */,
 				08DB3BE318C8111F003B8583 /* YCRequestParas.m */,
+				08DB3BED18C8312B003B8583 /* notification */,
 			);
 			name = NetWork;
 			sourceTree = "<group>";
@@ -666,6 +670,15 @@
 				08BC3F2D18AA0B40006B4D01 /* Localizable.strings */,
 			);
 			name = Languages;
+			sourceTree = "<group>";
+		};
+		08DB3BED18C8312B003B8583 /* notification */ = {
+			isa = PBXGroup;
+			children = (
+				08DB3BF318C831E6003B8583 /* YCNotifyMsg.h */,
+				08DB3BF418C831E6003B8583 /* YCNotifyMsg.m */,
+			);
+			path = notification;
 			sourceTree = "<group>";
 		};
 		08EA9A7418C5E39000C39503 /* Image.imageset */ = {
@@ -856,6 +869,7 @@
 				08BC3F1F18A9FE37006B4D01 /* FMDatabaseQueue.m in Sources */,
 				08A8C35218C72C7700C9E536 /* YCRequestCenter.m in Sources */,
 				089D5CE818B1AE4B003B1842 /* SetterCell.m in Sources */,
+				08DB3BF518C831E6003B8583 /* YCNotifyMsg.m in Sources */,
 				0899CBC018AB5F3D005432A5 /* STARKBoutiqueViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -985,8 +999,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: STARK INTERACTIVE TECHNOLOGY LIMITED (4WMXPE8KH8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: STARK INTERACTIVE TECHNOLOGY LIMITED (4WMXPE8KH8)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gao Yangchun (XMHBZJG8F3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gao Yangchun (XMHBZJG8F3)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}",
@@ -1003,7 +1017,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "AEDC0935-C297-445E-B532-7D03658D3F6D";
+				PROVISIONING_PROFILE = "C6AE0964-A0FD-483F-A05A-8260F14C9DB0";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1012,8 +1026,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: STARK INTERACTIVE TECHNOLOGY LIMITED (4WMXPE8KH8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: STARK INTERACTIVE TECHNOLOGY LIMITED (4WMXPE8KH8)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gao Yangchun (XMHBZJG8F3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gao Yangchun (XMHBZJG8F3)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}",
@@ -1030,7 +1044,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "AEDC0935-C297-445E-B532-7D03658D3F6D";
+				PROVISIONING_PROFILE = "C6AE0964-A0FD-483F-A05A-8260F14C9DB0";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

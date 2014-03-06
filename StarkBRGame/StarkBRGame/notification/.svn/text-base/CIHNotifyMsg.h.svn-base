@@ -1,0 +1,92 @@
+//
+//  CIHNotifyMsg.h
+//  smartcar
+//
+//  Created by vic.zh on 13-12-17.
+//  Copyright (c) 2013年 vic.zh. All rights reserved.
+//
+
+/*
+ 注意：
+ 1.CIHNotifyMsg.code 一定是 NOTIFY_CODE_ 宏定义的
+ 2.发送通知统一用CIHNotifyMsg 的类方法 postNotification
+ */
+
+#import <Foundation/Foundation.h>
+
+#define NOTIFY_CODE_OK 0
+#define NOTIFY_CODE_HTTP_ERR       1           //HTTP 请求失败返回200以外的值（例如：403，404等等）
+#define NOTIFY_CODE_RESPONDATA_ERR 2           //HTTP 返回的数据体格式不能正确解析
+
+//用户相关
+#define NOTIFY_CODE_USER                        1000 //BASE
+#define NOTIFY_CODE_USER_USERNAME_INVALID       1001 //用户名无效
+#define NOTIFY_CODE_USER_PASSWORD_INCORRECT     1002 //密码错误
+#define NOTIFY_CODE_USER_REGISTER_ALREADY       1003 //用户已注册
+#define NOTIFY_CODE_USER_FORGOTPW_EMAILINVALID  1004 //找回密码，邮箱无效
+
+//车辆相关
+#define NOTIFY_CODE_CAR                         2000 //BASE
+#define NOTIFY_CODE_CAR_MODEL_OK                2001 //解析车型数据正确
+#define NOTIFY_CODE_CAR_MODEL_NOSUBNODES        2002 //解析车型没有子节点了
+#define NOTIFY_CODE_CAR_MODEL_SERVERERR         2003 //正常返回了，可能是我们自己的服务器出现问题导致没有数据
+#define NOTIFY_CODE_CAR_HAD_THE_CAR             2004 //添加车辆，已经存在这个车辆
+#define NOTIFY_CODE_CAR_GETINFO_ERROR           2005 //获取实时数据失败
+//#define NOTIFY_CODE_CAR_NOSUBNODE               @"0007"
+
+
+
+//trip相关
+#define NOTIFY_CODE_TRIP_BASE                        3000
+
+#define NOTIFY_CODE_TRIP_COUNT_SUCESS                3100
+#define NOTIFY_CODE_TRIP_MONTH_SUCESS                3101
+
+#define NOTIFY_CODE_TRIP_COUNT_FAILED                3200
+#define NOTIFY_CODE_TRIP_MONTH_FAILED                3201
+//OBD相关
+#define NOTIFY_CODE_OBD                         4000 //BASE
+
+#define NOTIFY_CODE_OBD_CHECK_SUCCESS           4100
+#define NOTIFY_CODE_OBD_DATA_SUCCES             4101  
+#define NOTIFY_CODE_OBD_BAIDU_SUCCES            4102  
+
+#define NOTIFY_CODE_OBD_CHECK_FAILED           4200
+#define NOTIFY_CODE_OBD_DATA_FAILED            4201
+#define NOTIFY_CODE_OBD_BAIDU_FAILED           4202  
+
+//车友动态          
+#define NOTIFY_CODE_MSG_BASE                    5000
+
+#define NOTIFY_CODE_POST_SUCCESS                5100 //列表
+#define NOTIFY_CODE_COMMENT_SUCCESS             5101 //发评论
+#define NOTIFY_CODE_SEND_SUCCESS                5102 //发消息
+#define NOTIFY_CODE_IMAGE_SUCESS                5103 //图片
+
+#define NOTIFY_CODE_POST_FAILED                5200  
+#define NOTIFY_CODE_COMMENT_FAILED             5201 //发评论
+#define NOTIFY_CODE_SEND_FAILED                5202 //发消息
+#define NOTIFY_CODE_IMAGE_FAILED               5203 //图片
+
+//配置信息
+#define NOTIFY_CODE_CFG_BASE                   6000
+ 
+#define NOTIFY_CODE_CFG_SOS_SUCESS             6100  //sos电话
+#define NOTIFY_CODE_CFG_NEW_SUCESS             6101  //最新资讯
+
+#define NOTIFY_CODE_CFG_SOS_FAILED             6200
+#define NOTIFY_CODE_CFG_NEW_FAILED             6201
+
+//check
+#define NOTIFY_CODE_NO_RECORD                  7000
+
+
+@interface CIHNotifyMsg : NSObject
+
+@property(nonatomic, assign)NSInteger code;
+@property(nonatomic, retain)NSString* msg;
+@property(nonatomic, retain)NSString* name;
+//发送一个通知
++(void)postNotification:(NSString*)notifyName notifyObj:(CIHNotifyMsg*)obj;
+
+@end

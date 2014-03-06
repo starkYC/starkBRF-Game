@@ -59,8 +59,6 @@ YCRequestCenter *__RequestCenter;
 {
     if(paras == nil)
         return nil;
-    
-    NSLog(@"URL:%@",[paras getRequestUrl]);
     if([paras.httpMothod isEqualToString:HTTP_MOTHOD_GET])
     {
         STRLOG(@"HTTP_MOTHOD_GET");

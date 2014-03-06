@@ -35,9 +35,7 @@
 {
     NSString *gameStr = [YCFileMgr getDocumentFile];
     gameStr = [gameStr stringByAppendingPathComponent:@"gameData"];
-    STRLOG(@"gamestr:%@",gameStr);
     [[NSFileManager defaultManager]createDirectoryAtPath:gameStr withIntermediateDirectories:YES attributes:nil error:nil];
-    STRLOG(@"gamestr:%@",gameStr);
     return gameStr;
 }
 
@@ -59,7 +57,7 @@
     
     if(!flag)
     {
-        NSString *pagePath = [gamePath stringByAppendingPathComponent:[NSString stringWithFormat:@"%d.txt",gamePage]];
+        NSString *pagePath = [gamePath stringByAppendingPathComponent:[NSString stringWithFormat:@"page%d.txt",gamePage]];
        isSuccess = [[NSFileManager defaultManager] createFileAtPath:pagePath contents:data attributes:nil];
         
     }
