@@ -7,7 +7,7 @@
 //
 
 #import "Purchase.h"
-#import "DBManger.h"
+
 
 @implementation Purchase
 static Purchase *purchase = nil;

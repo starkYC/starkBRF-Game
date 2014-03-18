@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DBManger.h"
+
 #import "MJRefreshBaseView.h"
 
 @interface RootViewController : UIViewController

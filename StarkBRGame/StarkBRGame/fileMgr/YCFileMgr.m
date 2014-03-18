@@ -57,7 +57,8 @@
     
     if(!flag)
     {
-        NSString *pagePath = [gamePath stringByAppendingPathComponent:[NSString stringWithFormat:@"page%d.txt",gamePage]];
+        NSString *pagePath = [gamePath stringByAppendingPathComponent:[NSString stringWithFormat:@"page%ld.txt",(long)gamePage]];
+        STRLOG(@"path:%@",pagePath);
        isSuccess = [[NSFileManager defaultManager] createFileAtPath:pagePath contents:data attributes:nil];
         
     }

@@ -54,6 +54,7 @@
         
         STRLOG(@"代理方法没写");
     }
+
     [self dismissViewControllerAnimated:YES completion:^{
         
     }];

@@ -12,7 +12,6 @@
 #import "ASIHTTPRequest.h"
 #import "YCRequestParas.h"
 
-
 @interface YCRequestCenter ()
 
 @property ASINetworkQueue* reqQueue;
@@ -63,6 +62,7 @@ YCRequestCenter *__RequestCenter;
     {
         STRLOG(@"HTTP_MOTHOD_GET");
         ASIHTTPRequest* req1  =[ASIHTTPRequest requestWithURL:[NSURL URLWithString:[paras.downUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
+        
         req1.delegate = paras.reqDelegate;
         req1.userInfo = paras.userInfo;
         [self.reqQueue addOperation:req1];

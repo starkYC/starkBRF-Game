@@ -36,6 +36,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         Flag = 1;
+       // self.locPage = 1;
     }
     return self;
 }
@@ -69,7 +70,7 @@
         self.reqPage  = 1;
         NSString *str =@"https://itunes.apple.com/br/rss/topfreeapplications/limit=10/genre=6014/xml";
         [self startRequest:str];
-      //  STRLOG(@"%@----开始进入刷新状态", refreshView.class);
+        STRLOG(@"%@----开始进入刷新状态", refreshView.class);
     };
     [header beginRefreshing];
     _header = header;
@@ -91,9 +92,11 @@
 - (void)startRequest:(NSString *)url{
     
     [super startRequest:url];
+    
     if (![self checkNetWork]) {
         [self fillReqRefresh];
     }
+    STRLOG(@"check");
     if ([self checkOutLocalData:self.reqPage]) {
         [self reloadData:self.gameData];
     }

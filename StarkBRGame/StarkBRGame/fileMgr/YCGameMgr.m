@@ -14,7 +14,7 @@
 #import "YCNotifyMsg.h"
 #import "GDataXMLNode.h"
 
-YCGameMgr *__userMgr;
+YCGameMgr *__userMgr ;
 
 @implementation YCGameMgr
 
@@ -27,7 +27,6 @@ YCGameMgr *__userMgr;
     }
     return self;
 }
-
 
 + (YCGameMgr*)sharedInstance
 {
@@ -62,6 +61,7 @@ YCGameMgr *__userMgr;
     [YCNotifyMsg shareYCNotifyMsg].code = NOTIFY_CODE_HTTP_ERR;
     [self postVCRequest];
 }
+
 - (void)requestFinished:(ASIHTTPRequest *)request{
     
     if(![[YCRequestCenter sharedInstance] isRequestSuccesed:request])

@@ -304,16 +304,17 @@
         personal.name = self.nameLabel.text;
         personal.delegate = self;
         
-        [self presentViewController:personal animated:YES completion:^{
+        [self.navigationController presentViewController:personal animated:YES completion:^{
             
         }];
+//        [self presentViewController:personal animated:YES completion:^{
+//            
+//        }];
 
     }else{
         STRLOG(@"index:%d",self.tabBarController.selectedIndex);
     }
 }
-
-
 
 #pragma mark 读写用户信息
 //google用户信息写入本地
@@ -340,7 +341,6 @@
 //facebook用户信息写入本地
 - (void)writeToFacebook{
     
-
 }
 
 //删除google用户信息
